@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import '../models/lesson.dart';
 import '../theme/ios26_colors.dart';
@@ -50,7 +50,9 @@ class CourseProgressProvider extends ChangeNotifier {
   /// Load progress data from local storage
   Future<void> _loadProgressData() async {
     try {
-      final prefs = await SharedPreferences.getInstance();
+      // TODO: Implement local storage when SharedPreferences is added back
+      return;
+      // final prefs = await SharedPreferences.getInstance();
       
       // Load completed lessons
       final completedJson = prefs.getString('completed_lessons');
@@ -105,7 +107,9 @@ class CourseProgressProvider extends ChangeNotifier {
   /// Load learning analytics data
   Future<void> _loadAnalyticsData() async {
     try {
-      final prefs = await SharedPreferences.getInstance();
+      // TODO: Implement analytics storage when SharedPreferences is added back
+      return;
+      // final prefs = await SharedPreferences.getInstance();
       final analyticsJson = prefs.getString('learning_analytics');
       
       if (analyticsJson != null) {
@@ -122,7 +126,9 @@ class CourseProgressProvider extends ChangeNotifier {
   /// Save progress data to local storage
   Future<void> _saveProgressData() async {
     try {
-      final prefs = await SharedPreferences.getInstance();
+      // TODO: Implement save when SharedPreferences is added back
+      return;
+      // final prefs = await SharedPreferences.getInstance();
       
       // Save completed lessons
       final completedData = _completedLessons.map((key, value) => 
@@ -153,7 +159,9 @@ class CourseProgressProvider extends ChangeNotifier {
   /// Save learning analytics data
   Future<void> _saveAnalyticsData() async {
     try {
-      final prefs = await SharedPreferences.getInstance();
+      // TODO: Implement analytics save when SharedPreferences is added back
+      return;
+      // final prefs = await SharedPreferences.getInstance();
       await prefs.setString('learning_analytics', json.encode(_learningAnalytics));
     } catch (e) {
       debugPrint('Error saving analytics data: $e');

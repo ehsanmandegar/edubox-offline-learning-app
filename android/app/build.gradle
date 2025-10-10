@@ -50,9 +50,13 @@ android {
 
     buildTypes {
         release {
-            // Remove signingConfig for CI builds
+            // Disable minification and resource shrinking for CI builds
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            shrinkResources false
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
         }
     }
 }

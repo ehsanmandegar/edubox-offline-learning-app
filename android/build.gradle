@@ -23,7 +23,9 @@ subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
 }
 subprojects {
-    project.evaluationDependsOn(':app')
+    if (project.findProject(':app') != null && project != project(':app')) {
+        project.evaluationDependsOn(':app')
+    }
 }
 
 tasks.register("clean", Delete) {

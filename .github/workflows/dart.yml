@@ -3,13 +3,12 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Dart
+name: Dart Analysis
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:

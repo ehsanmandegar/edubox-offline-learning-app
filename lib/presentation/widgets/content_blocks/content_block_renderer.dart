@@ -135,9 +135,7 @@ class ContentBlockRenderer extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
               child: Image.asset(
                 content['src'] ?? 'assets/images/placeholder.png',
-                width: double.tryParse(content['width']?.toString() ?? '100%') == null 
-                    ? double.infinity 
-                    : double.tryParse(content['width']?.toString()),
+                width: _parseWidth(content['width']),
                 fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) {
                   return Container(
@@ -401,5 +399,19 @@ class ContentBlockRenderer extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  double? _parseWidth(dynamic widthValue) {
+    if (widthValue == null) return null;
+    
+    final widthStr = widthValue.toString();
+    
+    // Handle percentage values like "100%"
+    if (widthStr.contains('%')) {
+      return double.infinity;
+    }
+    
+    // Try to parse as double
+    return double.tryParse(widthStr);
   }
 }

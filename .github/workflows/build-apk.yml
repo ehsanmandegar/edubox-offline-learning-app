@@ -29,11 +29,20 @@ jobs:
     - name: Flutter doctor
       run: flutter doctor -v
     
+    - name: Clean Flutter cache
+      run: |
+        flutter clean
+        flutter pub cache clean
+        rm -rf ~/.pub-cache
+    
     - name: Get Flutter dependencies
       run: flutter pub get
     
-    - name: Clean build
-      run: flutter clean
+    - name: Clean Gradle cache
+      run: |
+        cd android
+        ./gradlew clean
+        rm -rf ~/.gradle/caches
     
     - name: Build APK
       run: flutter build apk --release --verbose

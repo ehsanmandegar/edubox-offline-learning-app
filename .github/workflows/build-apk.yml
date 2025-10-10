@@ -40,9 +40,9 @@ jobs:
     
     - name: Clean Gradle cache
       run: |
-        cd android
-        ./gradlew clean
         rm -rf ~/.gradle/caches
+        rm -rf android/.gradle
+        rm -rf android/app/build
     
     - name: Build APK
       run: flutter build apk --release --verbose

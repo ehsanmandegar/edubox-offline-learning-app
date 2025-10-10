@@ -1,0 +1,164 @@
+{
+  "courses": [
+    {
+      "id": "html-basics",
+      "categoryId": "programming",
+      "title": "مبانی HTML",
+      "description": "یادگیری HTML از پایه تا پیشرفته با W3Schools",
+      "iconPath": "assets/icons/html.png",
+      "price": 29.99,
+      "freeLessons": 3,
+      "lessons": [
+        {
+          "id": "html-introduction",
+          "courseId": "html-basics",
+          "title": "HTML Introduction",
+          "content": "HTML is the standard markup language for creating Web pages.\n\nA Simple HTML Document\n\nWhat is an HTML Element?\n\nAn HTML element is defined by a start tag, some content, and an end tag:\n\nThe HTMLelementis everything from the start tag to the end tag:\n\nNote:Some HTML elements have no content (like the <br> \nelement). These elements are called empty elements. Empty elements do not have an end tag!\n\nThe purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them \ncorrectly.\n\nA browser does not display the HTML tags, but uses them to determine how to display the document:\n\nBelow is a visualization of an HTML page structure:\n\nNote:The content inside the <body> section \nwill be displayed in a browser. The content inside the <title> element will be \nshown in the browser's title bar or in the page's tab.\n\nSince the early days of the World Wide Web, there have been many versions of HTML:\n\nThis tutorial follows the latest HTML5 standard.\n\nVideo: HTML Introduction",
+          "translatedContent": "HTML زبان نشانه‌گذاری برای ایجاد صفحات وب است. HTML مخفف HyperText Markup Language می‌باشد.",
+          "images": [],
+          "examples": [
+            "Example<!DOCTYPE html><html><head><title>Page Title</title></head><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>Try it Yourself »",
+            "<!DOCTYPE html><html><head><title>Page Title</title></head><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>"
+          ],
+          "isFree": true,
+          "order": 1
+        },
+        {
+          "id": "html-basic-structure",
+          "courseId": "html-basics",
+          "title": "HTML Basic Structure",
+          "content": "In this chapter we will show some basic HTML examples.\n\nDon't worry if we use tags you have not learned about yet.\n\nAll HTML documents must start with a document type declaration:<!DOCTYPE html>.\n\nThe HTML document itself begins with<html>and ends with</html>.\n\nThe visible part of the HTML document is between<body>and</body>.\n\nThe <!DOCTYPE> Declaration\n\nThe<!DOCTYPE>declaration represents the document type, and helps browsers to display web pages correctly.\n\nIt must only appear once, at the top of the page (before any HTML tags).\n\nThe<!DOCTYPE>declaration is not case sensitive.\n\nThe<!DOCTYPE>declaration for HTML5 is:\n\nHTML headings are defined with the<h1>to<h6>tags.\n\n<h1>defines the most important heading.<h6>defines the least important \nheading:\n\nHTML paragraphs are defined with the<p>tag:\n\nHTML links are defined with the<a>tag:\n\nThe link's destination is specified in thehrefattribute.\n\nAttributes are used to provide additional information about HTML elements.\n\nYou will learn more about attributes in a later chapter.\n\nHTML images are defined with the<img>tag.\n\nThe source file (src), alternative text (alt),width, andheightare provided as attributes:\n\nHow to View HTML Source\n\nHave you ever seen a Web page and wondered \"Hey! How did they do that?\"\n\nView HTML Source Code:\n\nClick CTRL + U in an HTML page, or right-click on the page and select \"View Page Source\". This will open a \nnew tab \ncontaining the HTML source code of the page.\n\nInspect an HTML Element:\n\nRight-click on an element (or a blank area), and choose \"Inspect\" to see what elements are made up of (you will see both \nthe HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the \nElements or Styles panel that opens.",
+          "translatedContent": "ساختار اساسی HTML شامل تگ‌های html، head و body است که هر صفحه وب باید داشته باشد.",
+          "images": [],
+          "examples": [
+            "Example<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>Try it Yourself »",
+            "<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>",
+            "<!DOCTYPE html>"
+          ],
+          "isFree": true,
+          "order": 2
+        },
+        {
+          "id": "html-elements",
+          "courseId": "html-basics",
+          "title": "HTML Elements",
+          "content": "An HTML element is defined by a start tag, some content, and an \nend tag.\n\nThe HTMLelementis everything from the start tag to the end tag:\n\nExamples of some HTML elements:\n\nNote:Some HTML elements have no content (like the <br> \nelement). These elements are called empty elements. Empty elements do not have an end tag!\n\nHTML elements can be nested (this means that elements can contain other elements).\n\nAll HTML documents consist of nested HTML elements.\n\nThe following example contains four HTML elements (<html>,<body>,<h1>and<p>):\n\nThe<html>element is the root element \nand it defines the whole HTML document.\n\nIt has a start tag<html>and an end tag</html>.\n\nThen, inside the<html>element there is \na<body>element:\n\nThe<body>element defines the \ndocument's body.\n\nIt has a start tag<body>and an end tag</body>.\n\nThen, inside the<body>element there \nare two other elements:<h1>and<p>:\n\nThe<h1>element defines a heading.\n\nIt has a start tag<h1>and an end tag</h1>:\n\nThe<p>element defines a paragraph.\n\nIt has a start tag<p>and an end tag</p>:\n\nNever Skip the End Tag\n\nSome HTML elements will display correctly, even if you forget the end tag:\n\nHowever, never rely on this! Unexpected results and errors may occur if you forget the end tag!\n\nHTML elements with no content are called empty elements.\n\nThe<br>tag defines a line break, and \nis an empty element without a closing tag:\n\nHTML is Not Case Sensitive\n\nHTML tags are not case sensitive:<P>means the same as<p>.\n\nThe HTML standard does not require lowercase tags, but W3Crecommendslowercase in HTML, anddemandslowercase for stricter document types like XHTML.\n\nAt W3Schools we always use lowercase tag names.\n\nW3Schools' tag reference contains additional information about these tags and their attributes.\n\nFor a complete list of all available HTML tags, visit ourHTML Tag Reference.",
+          "translatedContent": "عناصر HTML بلوک‌های سازنده صفحات وب هستند. هر عنصر با تگ باز شروع و با تگ بسته پایان می‌یابد.",
+          "images": [],
+          "examples": [
+            "Example<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>Try it Yourself »",
+            "<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>",
+            "<body><h1>My First Heading</h1><p>My first paragraph.</p></body>"
+          ],
+          "isFree": true,
+          "order": 3
+        },
+        {
+          "id": "html-attributes",
+          "courseId": "html-basics",
+          "title": "HTML Attributes",
+          "content": "HTML attributes provide additional information about HTML elements.\n\nThe<a>tag defines a hyperlink. Thehrefattribute specifies the URL of the page \nthe link goes to:\n\nYou will learn more about links in ourHTML Links\nchapter.\n\nThe<img>tag is used to embed an \nimage in an HTML page. Thesrcattribute \nspecifies the path to the image to be displayed:\n\nThere are two ways to specify the URL in thesrcattribute:\n\n1. Absolute URL- Links to an external image that is hosted \non another website. Example:src=\"https://www.w3schools.com/images/img_girl.jpg\".\n\nNotes:External images might be under copyright. If you do \nnot get permission to use it, you may be in violation of copyright laws. In \naddition, you cannot control external images; it can suddenly be removed or \nchanged.\n\n2. Relative URL- Links to an image that is hosted within \nthe website. Here, the URL does not include the domain name. If the URL begins \nwithout a slash, it will be relative to the current page. Example: src=\"img_girl.jpg\". \nIf the URL begins with a slash, it will be relative to the domain. Example: src=\"/images/img_girl.jpg\".\n\nTip:It is almost always best to use relative URLs. They \nwill not break if you change domain.\n\nThe width and height Attributes\n\nThe<img>tag should also contain thewidthandheightattributes, which specify the width and \nheight of the image (in pixels):\n\nThe requiredaltattribute for the<img>tag specifies an \nalternate text for an image, if the image for some reason cannot be displayed. \nThis can be due to \na slow connection, or an error in thesrcattribute, or if the user uses a screen \nreader.\n\nSee what happens if we try to display an image that does not exist:\n\nYou will learn more about images in ourHTML Images chapter.\n\nThestyleattribute is used to add styles to \nan element, such as color, font, size, and more.\n\nYou will learn more about styles in ourHTML Styles chapter.\n\nYou should always include thelangattribute \ninside the<html>tag, to declare the \nlanguage of the Web page. This is meant to assist search engines and browsers.\n\nThe following example specifies English as the language:\n\nCountry codes can also be added to the language code in thelangattribute. So, the first two characters define the language of the HTML page, \nand the last two characters define the country.\n\nThe following example specifies English as the language and United States as \nthe country:\n\nYou can see all the language codes in ourHTML Language Code Reference.\n\nThetitleattribute defines some extra \ninformation about an \nelement.\n\nThe value of the title attribute will be displayed as a tooltip when \nyou mouse over the element:\n\nWe Suggest: Always Use Lowercase Attributes\n\nThe HTML standard does not require lowercase attribute names.\n\nThe title attribute (and all other attributes) can be written with uppercase or lowercase \nliketitleorTITLE.\n\nHowever, W3Crecommendslowercase attributes in HTML, anddemandslowercase attributes for stricter document types like XHTML.\n\nAt W3Schools we always use lowercase attribute names.\n\nWe Suggest: Always Quote Attribute Values\n\nThe HTML standard does not require quotes around attribute values.\n\nHowever, W3Crecommendsquotes in HTML, anddemandsquotes for \nstricter document types like XHTML.\n\nSometimes you have to use quotes. This example will not display \nthe title attribute correctly, because it contains a space:\n\nAt W3Schools we always use quotes around attribute values.\n\nSingle or Double Quotes?\n\nDouble quotes around attribute values are the most common in HTML, but single \nquotes can also be used.\n\nIn some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:\n\nHTML Attribute Reference\n\nA complete list of all attributes for each HTML element, is listed in our:HTML Attribute Reference.\n\nVideo: HTML Attributes",
+          "translatedContent": "ویژگی‌های HTML اطلاعات اضافی درباره عناصر ارائه می‌دهند و در تگ باز نوشته می‌شوند.",
+          "images": [],
+          "examples": [
+            "Example<a href=\"https://www.w3schools.com\">Visit W3Schools</a>Try it Yourself »",
+            "<a href=\"https://www.w3schools.com\">Visit W3Schools</a>",
+            "Example<img src=\"img_girl.jpg\">Try it Yourself »"
+          ],
+          "isFree": false,
+          "order": 4
+        },
+        {
+          "id": "html-headings",
+          "courseId": "html-basics",
+          "title": "HTML Headings",
+          "content": "HTML headings are titles or subtitles that you want to display on a webpage.\n\nHTML headings are defined with the<h1>to<h6>tags.\n\n<h1>defines the most important heading.<h6>defines the least important heading.\n\nNote:Browsers automatically add some white space (a margin) before and after a heading.\n\nHeadings Are Important\n\nSearch engines use the headings to index the structure and content of your web pages.\n\nUsers often skim a page by its headings. It is important to use headings to show the document structure.\n\n<h1>headings should be used for main headings, followed by<h2>headings, then the less important<h3>, and so on.\n\nNote:Use HTML headings for headings only. Don't use headings to make textBIGorbold.\n\nEach HTML heading has a default size. However, you can specify the size for any heading \nwith thestyleattribute, using the CSSfont-sizeproperty:\n\nW3Schools' tag reference contains additional information about these tags and their attributes.\n\nFor a complete list of all available HTML tags, visit ourHTML Tag Reference.",
+          "translatedContent": "HTML سرتیترs are titles or subtitles that you want to display on a webpage.\n\nHTML سرتیترs are defined with the<h1>to<h6>تگs.\n\n<h1>defines the most important سرتیتر.<h6>defines the least important سرتیتر.\n\nNote:Browsers automatically add some white space (a margin) before and after a سرتیتر.\n\nHeadings Are Important\n\nSearch engines use the سرتیترs to index the structure and content of your صفحه وبs.\n\nUsers often skim a page by its سرتیترs. It is important to use سرتیترs to show the docum...",
+          "images": [],
+          "examples": [
+            "Example<h1>Heading 1</h1><h2>Heading 2</h2><h3>Heading 3</h3><h4>Heading 4</h4><h5>Heading 5</h5><h6>Heading 6</h6>Try it Yourself »",
+            "<h1>Heading 1</h1><h2>Heading 2</h2><h3>Heading 3</h3><h4>Heading 4</h4><h5>Heading 5</h5><h6>Heading 6</h6>",
+            "Example<h1 \n  style=\"font-size:60px;\">Heading 1</h1>Try it Yourself »"
+          ],
+          "isFree": false,
+          "order": 5
+        },
+        {
+          "id": "html-paragraphs",
+          "courseId": "html-basics",
+          "title": "HTML Paragraphs",
+          "content": "A paragraph always starts on a new line, and is usually a block of text.\n\nThe HTML<p>element defines a paragraph.\n\nA paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.\n\nYou cannot be sure how HTML will be displayed.\n\nLarge or small screens, and resized windows will create different results.\n\nWith HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.\n\nThe browser will automatically remove any extra spaces and lines when the page is \ndisplayed:\n\nHTML Horizontal Rules\n\nThe<hr>tag defines a thematic break in an HTML page, and is most often \ndisplayed as a horizontal rule.\n\nThe<hr>element is used to separate content (or define a change) in an HTML \npage:\n\nThe<hr>tag is an empty tag, which means that it has no end tag.\n\nThe HTML<br>element defines a line break.\n\nUse<br>if you want a line break (a new line) without starting a new paragraph:\n\nThe<br>tag is an empty tag, which means that it has no end tag.\n\nThis poem will display on a single line:\n\nSolution - The HTML <pre> Element\n\nThe HTML<pre>element defines preformatted text.\n\nThe text inside a<pre>element is displayed in a fixed-width font (usually \nCourier), and it preserves both spaces and line breaks:\n\nW3Schools' tag reference contains additional information about HTML elements and their attributes.\n\nFor a complete list of all available HTML tags, visit ourHTML Tag Reference.\n\nVideo: HTML Paragraphs",
+          "translatedContent": "A پاراگراف always starts on a new line, and is usually a block of text.\n\nThe HTML<p>عنصر defines a پاراگراف.\n\nA پاراگراف always starts on a new line, and مرورگرs automatically add some white space (a margin) before and after a پاراگراف.\n\nYou cannot be sure how HTML will be displayed.\n\nLarge or small screens, and resized windows will create different results.\n\nWith HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.\n\nThe مرورگر will automatically ...",
+          "images": [],
+          "examples": [
+            "Example<p>This is a paragraph.</p><p>This is another paragraph.</p>Try it Yourself »",
+            "<p>This is a paragraph.</p><p>This is another paragraph.</p>",
+            "Example<p>This paragraphcontains a lot of linesin the source code,but \n the browserignores it.</p><p>This paragraphcontains         \n a lot of spacesin the source         \n code,but the        browserignores \n it.</p>Try it Yourself »"
+          ],
+          "isFree": false,
+          "order": 6
+        },
+        {
+          "id": "html-links",
+          "courseId": "html-basics",
+          "title": "HTML Links",
+          "content": "Links are found in nearly all web pages. Links allow users to click their way from page to page.\n\nHTML Links - Hyperlinks\n\nHTML links are hyperlinks.\n\nYou can click on a link and jump to another document.\n\nWhen you move the mouse over a link, the mouse arrow will turn into a little hand.\n\nNote:A link does not have to be text. A link can be an image \n  or any other HTML element!\n\nThe HTML<a>tag defines a hyperlink. \nIt has the following syntax:\n\nThe most important attribute of the<a>element is thehrefattribute, which indicates the link's destination.\n\nThelink textis the part that will be visible to the reader.\n\nClicking on the link text, will send the reader to the specified URL address.\n\nThis example shows how to create a link to W3Schools.com:\n\nBy default, links will appear as follows in all browsers:\n\nTip:Links can of course be styled with CSS, to get \n  another look!\n\nHTML Links - The target Attribute\n\nBy default, the linked page will be displayed in the current browser window. \nTo change this, you must specify another target for the link.\n\nThetargetattribute specifies where to open the linked document.\n\nThetargetattribute can have one of the following values:\n\nUse target=\"_blank\" to open the linked document in a new browser window or tab:\n\nAbsolute URLs vs. Relative URLs\n\nBoth examples above are using anabsolute URL(a full web address) \nin thehrefattribute.\n\nA local link (a link to a page within the same website) is specified with arelative URL(without \nthe \"https://www\" part):\n\nHTML Links - Use an Image as a Link\n\nTo use an image as a link, just put the<img>tag inside the<a>tag:\n\nLink to an Email Address\n\nUsemailto:inside thehrefattribute to create a link that opens the user's email program (to \nlet them send a new email):\n\nTo use an HTML button as a link, you have to add some JavaScript code.\n\nJavaScript allows you to specify what happens at certain events, such as a click of a button:\n\nTip:Learn more about JavaScript in ourJavaScript Tutorial.\n\nThetitleattribute specifies extra information about an element.\nThe information is most often shown as a tooltip text when the mouse moves over the element.\n\nMore on Absolute URLs and Relative URLs\n\nUse a full URL to link to a web page:\n\nLink to a page located in the html folder on the current web site:\n\nLink to a page located in the same folder as the current page:\n\nYou can read more about file paths in the chapterHTML \nFile Paths.\n\nFor a complete list of all available HTML tags, visit ourHTML Tag Reference.",
+          "translatedContent": "Links are found in nearly all صفحه وبs. Links allow users to click their way from page to page.\n\nHTML Links - Hyperلینکs\n\nHTML لینکs are hyperلینکs.\n\nYou can click on a لینک and jump to another سند.\n\nWhen you move the mouse over a لینک, the mouse arrow will turn into a little hand.\n\nNote:A لینک does not have to be text. A لینک can be an تصویر \n  or any other HTML عنصر!\n\nThe HTML<a>تگ defines a hyperلینک. \nIt has the following syntax:\n\nThe most important ویژگی of the<a>عنصر is th...",
+          "images": [],
+          "examples": [
+            "<a href=\"url\">link text</a>",
+            "<a href=\"url\">link text</a>",
+            "ExampleThis example shows how to create a link to W3Schools.com:<a href=\"https://www.w3schools.com/\">Visit W3Schools.com!</a>Try it Yourself »"
+          ],
+          "isFree": false,
+          "order": 7
+        },
+        {
+          "id": "html-images",
+          "courseId": "html-basics",
+          "title": "HTML Images",
+          "content": "Images can improve the design and the appearance of a web page.\n\nThe HTML<img>tag is used to embed an \nimage in a web page.\n\nImages are not technically inserted into a web page; images are linked to web \npages. The<img>tag creates a holding \nspace for the referenced image.\n\nThe<img>tag is empty, it contains attributes only, and does not \nhave a closing tag.\n\nThe<img>tag has two required \nattributes:\n\nThe requiredsrcattribute specifies the path (URL) to the image.\n\nNote:When a web page loads, it is the browser, at that \nmoment, that gets the image from a web server and inserts it into the page. \nTherefore, make sure that the image actually stays in the same spot in relation \nto the web page, otherwise your visitors will get a broken link icon. The broken \nlink icon and thealttext are shown if the browser cannot find the image.\n\nThe requiredaltattribute provides an alternate text for an image, if the user for \nsome reason cannot view it (because of slow connection, an error in the src \nattribute, or if the user uses a screen reader).\n\nThe value of thealtattribute should describe the image:\n\nIf a browser cannot find an image, it will display the value of thealtattribute:\n\nTip:A screen reader is a software program that reads the HTML code, and allows the user to \"listen\" to the content. Screen readers are useful \nfor people who are visually impaired or learning disabled.\n\nImage Size - Width and Height\n\nYou can use thestyleattribute to specify the width and \nheight of an image.\n\nAlternatively, you can use thewidthandheightattributes:\n\nThewidthandheightattributes always define the width and height of the \nimage in pixels.\n\nNote:Always specify the width and height of an image. If width and height are not specified, the \n  web page \n  might flicker while the image loads.\n\nWidth and Height, or Style?\n\nThewidth,height, andstyleattributes are \nall valid in HTML.\n\nHowever, we suggest using thestyleattribute. It prevents styles sheets from changing \nthe size of images:\n\nImages in Another Folder\n\nIf you have your images in a sub-folder, you must include the folder \nname in thesrcattribute:\n\nImages on Another Server/Website\n\nSome web sites point to an image on another server.\n\nTo point to an image on another server, you must specify an absolute (full) \nURL in thesrcattribute:\n\nNotes on external images:External images might be under \ncopyright. If you do not get permission to use it, you may be in violation of \ncopyright laws. In addition, you cannot control external images; they can suddenly \nbe removed or changed.\n\nHTML allows animated GIFs:\n\nTo use an image as a link, put the<img>tag inside the<a>tag:\n\nUse the CSSfloatproperty to let the image float to the right or to the left of a text:\n\nTip:To learn more about CSS Float, read ourCSS Float Tutorial.\n\nHere are the most common image file types, which are supported in all browsers \n(Chrome, Edge, Firefox, Safari, Opera):\n\nNote:Loading large images takes time, and can slow down your \n  web page. Use images carefully.\n\nFor a complete list of all available HTML tags, visit ourHTML Tag Reference.",
+          "translatedContent": "Images can improve the design and the appearance of a صفحه وب.\n\nThe HTML<img>تگ is used to embed an \nتصویر in a صفحه وب.\n\nImages are not technically inserted into a صفحه وب; تصویرs are لینکed to web \npages. The<img>تگ creates a holding \nspace for the referenced تصویر.\n\nThe<img>تگ is empty, it contains ویژگیs only, and does not \nhave a closing تگ.\n\nThe<img>تگ has two required \nویژگیs:\n\nThe requiredsrcویژگی specifies the path (URL) to the تصویر.\n\nNote:When a صفحه وب loads, it ...",
+          "images": [],
+          "examples": [
+            "Example<img src=\"pic_trulli.jpg\" \nalt=\"Italian Trulli\">Try it Yourself »",
+            "<img src=\"pic_trulli.jpg\" \nalt=\"Italian Trulli\">",
+            "Example<img src=\"img_girl.jpg\" \nalt=\"Girl in a jacket\">Try it Yourself »"
+          ],
+          "isFree": false,
+          "order": 8
+        },
+        {
+          "id": "html-lists",
+          "courseId": "html-basics",
+          "title": "HTML Lists",
+          "content": "HTML lists allow web developers to group a set of related items in lists.\n\nAn unordered HTML list:\n\nAn ordered HTML list:\n\nAn unordered list starts with the<ul>tag. Each list item starts with the<li>tag.\n\nThe list items will be marked with bullets (small black circles) by default:\n\nAn ordered list starts with the<ol>tag. Each list item starts with the<li>tag.\n\nThe list items will be marked with numbers by default:\n\nHTML Description Lists\n\nHTML also supports description lists.\n\nA description list is a list of terms, with a description of each term.\n\nThe<dl>tag defines the description list, the<dt>tag defines the term (name), and the<dd>tag describes each term:\n\nFor a complete list of all available HTML tags, visit ourHTML Tag Reference.",
+          "translatedContent": "HTML لیستs allow web developers to group a set of related items in لیستs.\n\nAn unordered HTML لیست:\n\nAn ordered HTML لیست:\n\nAn unordered لیست starts with the<ul>تگ. Each لیست item starts with the<li>تگ.\n\nThe لیست items will be marked with bullets (small black circles) by default:\n\nAn ordered لیست starts with the<ol>تگ. Each لیست item starts with the<li>تگ.\n\nThe لیست items will be marked with numbers by default:\n\nHTML Description Lists\n\nHTML also supports description لیستs.\n\nA description لیست...",
+          "images": [],
+          "examples": [
+            "Example<ul><li>Coffee</li><li>Tea</li><li>Milk</li></ul>Try it Yourself »",
+            "<ul><li>Coffee</li><li>Tea</li><li>Milk</li></ul>",
+            "Example<ol><li>Coffee</li><li>Tea</li><li>Milk</li></ol>Try it Yourself »"
+          ],
+          "isFree": false,
+          "order": 9
+        },
+        {
+          "id": "html-tables",
+          "courseId": "html-basics",
+          "title": "HTML Tables",
+          "content": "HTML tables allow web developers to arrange data into rows and \ncolumns.\n\nA table in HTML consists of table cells inside rows and columns.\n\nEach table cell is defined by a<td>and a</td>tag.\n\ntdstands for table data.\n\nEverything between<td>and</td>is the content of a table cell.\n\nNote:A table cell can contain \nall sorts of HTML elements: text, images, lists, links, other tables, etc.\n\nEach table row starts with a<tr>and ends with a</tr>tag.\n\ntrstands for table row.\n\nYou can have as many rows as you like in a table; just make sure that the number of cells are the same in each row.\n\nNote:There are times when a row can have less or more cells than another. You will learn about that in a later chapter.\n\nSometimes you want your cells to be table header cells. In those cases use the<th>tag instead of the<td>tag:\n\nthstands for table header.\n\nLet the first row be table header cells:\n\nBy default, the text in<th>elements \nare bold and centered, but you can change that with CSS.\n\nFor a complete list of all available HTML tags, visit ourHTML Tag Reference.\n\nStyling TablesFilter TableSort TableResponsive TableZebra Striped Table",
+          "translatedContent": "HTML جدولs allow web developers to arrange data into rows and \ncolumns.\n\nA جدول in HTML consists of جدول cells inside rows and columns.\n\nEach جدول cell is defined by a<td>and a</td>تگ.\n\ntdstands for جدول data.\n\nEverything between<td>and</td>is the content of a جدول cell.\n\nNote:A جدول cell can contain \nall sorts of HTML عنصرs: text, تصویرs, لیستs, لینکs, other جدولs, etc.\n\nEach جدول row starts with a<tr>and ends with a</tr>تگ.\n\ntrstands for جدول row.\n\nYou can have as many rows as y...",
+          "images": [],
+          "examples": [
+            "ExampleA simple HTML table:<table><tr><th>Company</th><th>Contact</th><th>Country</th></tr><tr><td>Alfreds Futterkiste</td><td>Maria \n  Anders</td><td>Germany</td></tr><tr><td>Centro \n  comercial Moctezuma</td><td>Francisco \n  Chang</td><td>Mexico</td></tr></table>Try it Yourself »",
+            "<table><tr><th>Company</th><th>Contact</th><th>Country</th></tr><tr><td>Alfreds Futterkiste</td><td>Maria \n  Anders</td><td>Germany</td></tr><tr><td>Centro \n  comercial Moctezuma</td><td>Francisco \n  Chang</td><td>Mexico</td></tr></table>",
+            "Example<table><tr><td>Emil</td><td>Tobias</td><td>Linus</td></tr></table>Try it Yourself »"
+          ],
+          "isFree": false,
+          "order": 10
+        }
+      ]
+    }
+  ]
+}

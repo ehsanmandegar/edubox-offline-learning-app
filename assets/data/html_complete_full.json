@@ -1,0 +1,587 @@
+{
+  "courses": [
+    {
+      "id": "html-complete-course",
+      "categoryId": "programming",
+      "title": "دوره کامل HTML",
+      "description": "آموزش جامع HTML از مقدماتی تا پیشرفته با بیش از 40 درس",
+      "iconPath": "assets/icons/html.png",
+      "price": 49.99,
+      "freeLessons": 3,
+      "lessons": [
+        {
+          "id": "html-lesson-01",
+          "courseId": "html-complete-course",
+          "title": "مقدمه‌ای بر HTML",
+          "content": "This lesson covers html introduction. HTML مخفف HyperText Markup Language است و زبان استاندارد برای ایجاد صفحات وب محسوب می‌شود.",
+          "translatedContent": "HTML مخفف HyperText Markup Language است و زبان استاندارد برای ایجاد صفحات وب محسوب می‌شود.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای مقدمه‌ای بر HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": true,
+          "order": 1
+        },
+        {
+          "id": "html-lesson-02",
+          "courseId": "html-complete-course",
+          "title": "مبانی HTML",
+          "content": "This lesson covers html basics. هر سند HTML باید با <!DOCTYPE html> شروع شود و ساختار اساسی html، head و body داشته باشد.",
+          "translatedContent": "هر سند HTML باید با <!DOCTYPE html> شروع شود و ساختار اساسی html، head و body داشته باشد.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای مبانی HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": true,
+          "order": 2
+        },
+        {
+          "id": "html-lesson-03",
+          "courseId": "html-complete-course",
+          "title": "عناصر HTML",
+          "content": "This lesson covers html elements. عناصر HTML بلوک‌های سازنده صفحات وب هستند که با تگ‌های باز و بسته تعریف می‌شوند.",
+          "translatedContent": "عناصر HTML بلوک‌های سازنده صفحات وب هستند که با تگ‌های باز و بسته تعریف می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای عناصر HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": true,
+          "order": 3
+        },
+        {
+          "id": "html-lesson-04",
+          "courseId": "html-complete-course",
+          "title": "ویژگی‌های HTML",
+          "content": "This lesson covers html attributes. ویژگی‌ها اطلاعات اضافی درباره عناصر ارائه می‌دهند و در تگ باز نوشته می‌شوند.",
+          "translatedContent": "ویژگی‌ها اطلاعات اضافی درباره عناصر ارائه می‌دهند و در تگ باز نوشته می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای ویژگی‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 4
+        },
+        {
+          "id": "html-lesson-05",
+          "courseId": "html-complete-course",
+          "title": "سرتیترهای HTML",
+          "content": "This lesson covers html headings. سرتیترها از h1 تا h6 تعریف می‌شوند و برای ساختار سند و SEO مهم هستند.",
+          "translatedContent": "سرتیترها از h1 تا h6 تعریف می‌شوند و برای ساختار سند و SEO مهم هستند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای سرتیترهای HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 5
+        },
+        {
+          "id": "html-lesson-06",
+          "courseId": "html-complete-course",
+          "title": "پاراگراف‌های HTML",
+          "content": "This lesson covers html paragraphs. پاراگراف‌ها با تگ p تعریف شده و برای متن‌های طولانی استفاده می‌شوند.",
+          "translatedContent": "پاراگراف‌ها با تگ p تعریف شده و برای متن‌های طولانی استفاده می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای پاراگراف‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 6
+        },
+        {
+          "id": "html-lesson-07",
+          "courseId": "html-complete-course",
+          "title": "استایل‌های HTML",
+          "content": "This lesson covers html styles. استایل‌ها ظاهر عناصر را تعیین می‌کنند و با CSS یا ویژگی style اعمال می‌شوند.",
+          "translatedContent": "استایل‌ها ظاهر عناصر را تعیین می‌کنند و با CSS یا ویژگی style اعمال می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای استایل‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 7
+        },
+        {
+          "id": "html-lesson-08",
+          "courseId": "html-complete-course",
+          "title": "قالب‌بندی متن HTML",
+          "content": "This lesson covers html text formatting. تگ‌هایی مثل strong، em، mark برای تأکید و قالب‌بندی متن استفاده می‌شوند.",
+          "translatedContent": "تگ‌هایی مثل strong، em، mark برای تأکید و قالب‌بندی متن استفاده می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای قالب‌بندی متن HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 8
+        },
+        {
+          "id": "html-lesson-09",
+          "courseId": "html-complete-course",
+          "title": "نقل‌قول‌های HTML",
+          "content": "This lesson covers html quotations. برای نقل‌قول‌ها از تگ‌های blockquote، q و cite استفاده می‌شود.",
+          "translatedContent": "برای نقل‌قول‌ها از تگ‌های blockquote، q و cite استفاده می‌شود.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای نقل‌قول‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 9
+        },
+        {
+          "id": "html-lesson-10",
+          "courseId": "html-complete-course",
+          "title": "کامنت‌های HTML",
+          "content": "This lesson covers html comments. کامنت‌ها با <!-- --> نوشته شده و در مرورگر نمایش داده نمی‌شوند.",
+          "translatedContent": "کامنت‌ها با <!-- --> نوشته شده و در مرورگر نمایش داده نمی‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای کامنت‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 10
+        },
+        {
+          "id": "html-lesson-11",
+          "courseId": "html-complete-course",
+          "title": "رنگ‌های HTML",
+          "content": "This lesson covers html colors. رنگ‌ها با نام، کد هگز، RGB یا HSL تعریف می‌شوند.",
+          "translatedContent": "رنگ‌ها با نام، کد هگز، RGB یا HSL تعریف می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای رنگ‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 11
+        },
+        {
+          "id": "html-lesson-12",
+          "courseId": "html-complete-course",
+          "title": "CSS در HTML",
+          "content": "This lesson covers html css. CSS برای استایل‌دهی HTML استفاده می‌شود و می‌تواند داخلی، خارجی یا درون‌خطی باشد.",
+          "translatedContent": "CSS برای استایل‌دهی HTML استفاده می‌شود و می‌تواند داخلی، خارجی یا درون‌خطی باشد.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای CSS در HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 12
+        },
+        {
+          "id": "html-lesson-13",
+          "courseId": "html-complete-course",
+          "title": "لینک‌های HTML",
+          "content": "This lesson covers html links. لینک‌ها با تگ a و ویژگی href ایجاد می‌شوند و امکان پیمایش را فراهم می‌کنند.",
+          "translatedContent": "لینک‌ها با تگ a و ویژگی href ایجاد می‌شوند و امکان پیمایش را فراهم می‌کنند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای لینک‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 13
+        },
+        {
+          "id": "html-lesson-14",
+          "courseId": "html-complete-course",
+          "title": "تصاویر HTML",
+          "content": "This lesson covers html images. تصاویر با تگ img جاسازی شده و ویژگی‌های src و alt ضروری هستند.",
+          "translatedContent": "تصاویر با تگ img جاسازی شده و ویژگی‌های src و alt ضروری هستند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای تصاویر HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 14
+        },
+        {
+          "id": "html-lesson-15",
+          "courseId": "html-complete-course",
+          "title": "آیکون سایت HTML",
+          "content": "This lesson covers html favicon. فاویکون آیکون کوچک سایت است که در تب مرورگر نمایش داده می‌شود.",
+          "translatedContent": "فاویکون آیکون کوچک سایت است که در تب مرورگر نمایش داده می‌شود.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای آیکون سایت HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 15
+        },
+        {
+          "id": "html-lesson-16",
+          "courseId": "html-complete-course",
+          "title": "جدول‌های HTML",
+          "content": "This lesson covers html tables. جدول‌ها برای نمایش داده‌های جدولی با تگ‌های table، tr، td استفاده می‌شوند.",
+          "translatedContent": "جدول‌ها برای نمایش داده‌های جدولی با تگ‌های table، tr، td استفاده می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای جدول‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 16
+        },
+        {
+          "id": "html-lesson-17",
+          "courseId": "html-complete-course",
+          "title": "سرتیتر جدول HTML",
+          "content": "This lesson covers html table headers. سرتیترهای جدول با تگ th تعریف شده و معنای بهتری به داده‌ها می‌دهند.",
+          "translatedContent": "سرتیترهای جدول با تگ th تعریف شده و معنای بهتری به داده‌ها می‌دهند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای سرتیتر جدول HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 17
+        },
+        {
+          "id": "html-lesson-18",
+          "courseId": "html-complete-course",
+          "title": "اندازه جدول HTML",
+          "content": "This lesson covers html table sizes. اندازه جدول‌ها با CSS یا ویژگی‌های width و height کنترل می‌شود.",
+          "translatedContent": "اندازه جدول‌ها با CSS یا ویژگی‌های width و height کنترل می‌شود.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای اندازه جدول HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 18
+        },
+        {
+          "id": "html-lesson-19",
+          "courseId": "html-complete-course",
+          "title": "سرتیتر و پاورقی جدول",
+          "content": "This lesson covers html table headers & footers. جدول‌ها می‌توانند بخش‌های thead، tbody و tfoot داشته باشند.",
+          "translatedContent": "جدول‌ها می‌توانند بخش‌های thead، tbody و tfoot داشته باشند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای سرتیتر و پاورقی جدول -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 19
+        },
+        {
+          "id": "html-lesson-20",
+          "courseId": "html-complete-course",
+          "title": "پس‌زمینه جدول HTML",
+          "content": "This lesson covers html table styling. جدول‌ها با CSS استایل‌دهی شده و رنگ، حاشیه و فاصله تنظیم می‌شوند.",
+          "translatedContent": "جدول‌ها با CSS استایل‌دهی شده و رنگ، حاشیه و فاصله تنظیم می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای پس‌زمینه جدول HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 20
+        },
+        {
+          "id": "html-lesson-21",
+          "courseId": "html-complete-course",
+          "title": "ادغام سلول‌های جدول",
+          "content": "This lesson covers html table colspan & rowspan. سلول‌ها با colspan و rowspan می‌توانند چند ستون یا سطر را پوشش دهند.",
+          "translatedContent": "سلول‌ها با colspan و rowspan می‌توانند چند ستون یا سطر را پوشش دهند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای ادغام سلول‌های جدول -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 21
+        },
+        {
+          "id": "html-lesson-22",
+          "courseId": "html-complete-course",
+          "title": "لیست‌های HTML",
+          "content": "This lesson covers html lists. HTML سه نوع لیست دارد: مرتب (ol)، نامرتب (ul) و توصیفی (dl).",
+          "translatedContent": "HTML سه نوع لیست دارد: مرتب (ol)، نامرتب (ul) و توصیفی (dl).",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای لیست‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 22
+        },
+        {
+          "id": "html-lesson-23",
+          "courseId": "html-complete-course",
+          "title": "لیست‌های نامرتب HTML",
+          "content": "This lesson covers html unordered lists. لیست‌های نامرتب با ul ایجاد شده و آیتم‌ها با نقطه یا نماد نمایش داده می‌شوند.",
+          "translatedContent": "لیست‌های نامرتب با ul ایجاد شده و آیتم‌ها با نقطه یا نماد نمایش داده می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای لیست‌های نامرتب HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 23
+        },
+        {
+          "id": "html-lesson-24",
+          "courseId": "html-complete-course",
+          "title": "لیست‌های مرتب HTML",
+          "content": "This lesson covers html ordered lists. لیست‌های مرتب با ol ایجاد شده و آیتم‌ها با عدد یا حرف شماره‌گذاری می‌شوند.",
+          "translatedContent": "لیست‌های مرتب با ol ایجاد شده و آیتم‌ها با عدد یا حرف شماره‌گذاری می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای لیست‌های مرتب HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 24
+        },
+        {
+          "id": "html-lesson-25",
+          "courseId": "html-complete-course",
+          "title": "لیست‌های توصیفی HTML",
+          "content": "This lesson covers html description lists. لیست‌های توصیفی با dl ایجاد شده و شامل اصطلاح (dt) و توضیح (dd) هستند.",
+          "translatedContent": "لیست‌های توصیفی با dl ایجاد شده و شامل اصطلاح (dt) و توضیح (dd) هستند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای لیست‌های توصیفی HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 25
+        },
+        {
+          "id": "html-lesson-26",
+          "courseId": "html-complete-course",
+          "title": "عناصر بلوک و درون‌خطی",
+          "content": "This lesson covers html block & inline. عناصر HTML به دو دسته بلوک (div، p) و درون‌خطی (span، a) تقسیم می‌شوند.",
+          "translatedContent": "عناصر HTML به دو دسته بلوک (div، p) و درون‌خطی (span، a) تقسیم می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای عناصر بلوک و درون‌خطی -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 26
+        },
+        {
+          "id": "html-lesson-27",
+          "courseId": "html-complete-course",
+          "title": "عنصر Div در HTML",
+          "content": "This lesson covers html div element. div یک عنصر بلوک عمومی است که برای گروه‌بندی و چیدمان استفاده می‌شود.",
+          "translatedContent": "div یک عنصر بلوک عمومی است که برای گروه‌بندی و چیدمان استفاده می‌شود.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای عنصر Div در HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 27
+        },
+        {
+          "id": "html-lesson-28",
+          "courseId": "html-complete-course",
+          "title": "کلاس‌های HTML",
+          "content": "This lesson covers html classes. کلاس‌ها برای استایل‌دهی گروهی عناصر با CSS استفاده می‌شوند.",
+          "translatedContent": "کلاس‌ها برای استایل‌دهی گروهی عناصر با CSS استفاده می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای کلاس‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 28
+        },
+        {
+          "id": "html-lesson-29",
+          "courseId": "html-complete-course",
+          "title": "شناسه‌های HTML",
+          "content": "This lesson covers html id. شناسه‌ها برای تعریف عناصر منحصربه‌فرد و لینک‌دهی داخلی استفاده می‌شوند.",
+          "translatedContent": "شناسه‌ها برای تعریف عناصر منحصربه‌فرد و لینک‌دهی داخلی استفاده می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای شناسه‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 29
+        },
+        {
+          "id": "html-lesson-30",
+          "courseId": "html-complete-course",
+          "title": "فریم‌های HTML",
+          "content": "This lesson covers html iframes. iframe برای جاسازی صفحات دیگر درون صفحه فعلی استفاده می‌شود.",
+          "translatedContent": "iframe برای جاسازی صفحات دیگر درون صفحه فعلی استفاده می‌شود.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای فریم‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 30
+        },
+        {
+          "id": "html-lesson-31",
+          "courseId": "html-complete-course",
+          "title": "جاوااسکریپت در HTML",
+          "content": "This lesson covers html javascript. جاوااسکریپت با تگ script به HTML اضافه شده و تعامل ایجاد می‌کند.",
+          "translatedContent": "جاوااسکریپت با تگ script به HTML اضافه شده و تعامل ایجاد می‌کند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای جاوااسکریپت در HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 31
+        },
+        {
+          "id": "html-lesson-32",
+          "courseId": "html-complete-course",
+          "title": "مسیرهای فایل HTML",
+          "content": "This lesson covers html file paths. مسیرهای فایل می‌توانند مطلق، نسبی، ریشه‌ای یا کامل باشند.",
+          "translatedContent": "مسیرهای فایل می‌توانند مطلق، نسبی، ریشه‌ای یا کامل باشند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای مسیرهای فایل HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 32
+        },
+        {
+          "id": "html-lesson-33",
+          "courseId": "html-complete-course",
+          "title": "بخش Head در HTML",
+          "content": "This lesson covers html head element. بخش head حاوی اطلاعات متا، عنوان، لینک‌ها و اسکریپت‌هاست.",
+          "translatedContent": "بخش head حاوی اطلاعات متا، عنوان، لینک‌ها و اسکریپت‌هاست.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای بخش Head در HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 33
+        },
+        {
+          "id": "html-lesson-34",
+          "courseId": "html-complete-course",
+          "title": "چیدمان HTML",
+          "content": "This lesson covers html layout. چیدمان صفحه با عناصر معنایی مثل header، nav، main، footer ایجاد می‌شود.",
+          "translatedContent": "چیدمان صفحه با عناصر معنایی مثل header، nav، main، footer ایجاد می‌شود.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای چیدمان HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 34
+        },
+        {
+          "id": "html-lesson-35",
+          "courseId": "html-complete-course",
+          "title": "HTML واکنش‌گرا",
+          "content": "This lesson covers html responsive. طراحی واکنش‌گرا با viewport meta tag و CSS media queries ایجاد می‌شود.",
+          "translatedContent": "طراحی واکنش‌گرا با viewport meta tag و CSS media queries ایجاد می‌شود.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای HTML واکنش‌گرا -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 35
+        },
+        {
+          "id": "html-lesson-36",
+          "courseId": "html-complete-course",
+          "title": "کد کامپیوتری HTML",
+          "content": "This lesson covers html computer code. برای نمایش کد از تگ‌های code، pre، kbd، samp استفاده می‌شود.",
+          "translatedContent": "برای نمایش کد از تگ‌های code، pre، kbd، samp استفاده می‌شود.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای کد کامپیوتری HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 36
+        },
+        {
+          "id": "html-lesson-37",
+          "courseId": "html-complete-course",
+          "title": "معناشناسی HTML",
+          "content": "This lesson covers html semantic elements. عناصر معنایی مثل article، section، aside معنای بهتری به محتوا می‌دهند.",
+          "translatedContent": "عناصر معنایی مثل article، section، aside معنای بهتری به محتوا می‌دهند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای معناشناسی HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 37
+        },
+        {
+          "id": "html-lesson-38",
+          "courseId": "html-complete-course",
+          "title": "راهنمای سبک HTML",
+          "content": "This lesson covers html style guide. کدنویسی تمیز شامل تورفتگی، نام‌گذاری مناسب و ساختار منظم است.",
+          "translatedContent": "کدنویسی تمیز شامل تورفتگی، نام‌گذاری مناسب و ساختار منظم است.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای راهنمای سبک HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 38
+        },
+        {
+          "id": "html-lesson-39",
+          "courseId": "html-complete-course",
+          "title": "موجودیت‌های HTML",
+          "content": "This lesson covers html entities. موجودیت‌ها برای نمایش کاراکترهای خاص مثل <، >، & استفاده می‌شوند.",
+          "translatedContent": "موجودیت‌ها برای نمایش کاراکترهای خاص مثل <، >، & استفاده می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای موجودیت‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 39
+        },
+        {
+          "id": "html-lesson-40",
+          "courseId": "html-complete-course",
+          "title": "نمادهای HTML",
+          "content": "This lesson covers html symbols. نمادهای ریاضی، پول، فلش با کدهای خاص یا موجودیت‌ها نمایش داده می‌شوند.",
+          "translatedContent": "نمادهای ریاضی، پول، فلش با کدهای خاص یا موجودیت‌ها نمایش داده می‌شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای نمادهای HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 40
+        },
+        {
+          "id": "html-lesson-41",
+          "courseId": "html-complete-course",
+          "title": "ایموجی‌های HTML",
+          "content": "This lesson covers html emojis. ایموجی‌ها با کدهای UTF-8 یا کپی مستقیم در HTML قابل استفاده هستند.",
+          "translatedContent": "ایموجی‌ها با کدهای UTF-8 یا کپی مستقیم در HTML قابل استفاده هستند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای ایموجی‌های HTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 41
+        },
+        {
+          "id": "html-lesson-42",
+          "courseId": "html-complete-course",
+          "title": "مجموعه کاراکترها",
+          "content": "This lesson covers html charset. charset مجموعه کاراکترهای مورد استفاده را مشخص می‌کند، معمولاً UTF-8.",
+          "translatedContent": "charset مجموعه کاراکترهای مورد استفاده را مشخص می‌کند، معمولاً UTF-8.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای مجموعه کاراکترها -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 42
+        },
+        {
+          "id": "html-lesson-43",
+          "courseId": "html-complete-course",
+          "title": "کدگذاری URL",
+          "content": "This lesson covers html url encoding. کاراکترهای خاص در URL باید کدگذاری شوند تا صحیح ارسال شوند.",
+          "translatedContent": "کاراکترهای خاص در URL باید کدگذاری شوند تا صحیح ارسال شوند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای کدگذاری URL -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 43
+        },
+        {
+          "id": "html-lesson-44",
+          "courseId": "html-complete-course",
+          "title": "HTML در مقابل XHTML",
+          "content": "This lesson covers html vs xhtml. XHTML نسخه سخت‌گیرانه‌تر HTML است که قوانین XML را دنبال می‌کند.",
+          "translatedContent": "XHTML نسخه سخت‌گیرانه‌تر HTML است که قوانین XML را دنبال می‌کند.",
+          "images": [],
+          "examples": [
+            "<!-- مثال برای HTML در مقابل XHTML -->\n<p>این بخش شامل مثال‌های کاربردی است.</p>"
+          ],
+          "isFree": false,
+          "order": 44
+        }
+      ]
+    }
+  ]
+}

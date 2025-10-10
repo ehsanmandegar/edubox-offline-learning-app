@@ -1,3 +1,5 @@
+import 'content_block.dart';
+
 class Lesson {
   final String id;
   final String courseId;
@@ -8,6 +10,12 @@ class Lesson {
   final List<String> examples;
   final bool isFree;
   final int order;
+  
+  // Rich content support
+  final List<ContentBlock>? contentBlocks;
+  final String? estimatedTime;
+  final String? difficulty;
+  final Map<String, dynamic>? metadata;
 
   Lesson({
     required this.id,
@@ -19,10 +27,23 @@ class Lesson {
     this.examples = const [],
     required this.isFree,
     required this.order,
+    this.contentBlocks,
+    this.estimatedTime,
+    this.difficulty,
+    this.metadata,
   });
+
+  bool get hasRichContent => contentBlocks != null && contentBlocks!.isNotEmpty;
 
   factory Lesson.fromJson(Map<String, dynamic> json) {
     try {
+      List<ContentBlock>? contentBlocks;
+      if (json['contentBlocks'] != null) {
+        contentBlocks = (json['contentBlocks'] as List)
+            .map((block) => ContentBlock.fromJson(block))
+            .toList();
+      }
+
       return Lesson(
         id: json['id'] as String? ?? '',
         courseId: json['courseId'] as String? ?? '',
@@ -33,6 +54,10 @@ class Lesson {
         examples: List<String>.from(json['examples'] as List<dynamic>? ?? []),
         isFree: json['isFree'] as bool? ?? false,
         order: json['order'] as int? ?? 0,
+        contentBlocks: contentBlocks,
+        estimatedTime: json['estimatedTime'],
+        difficulty: json['difficulty'],
+        metadata: json['metadata'],
       );
     } catch (e) {
       throw FormatException('Invalid lesson JSON format: $e');

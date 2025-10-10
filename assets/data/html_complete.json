@@ -1,0 +1,145 @@
+{
+  "courses": [
+    {
+      "id": "html-complete",
+      "categoryId": "programming",
+      "title": "آموزش کامل HTML",
+      "description": "یادگیری کامل HTML از صفر تا صد با ترجمه دقیق فارسی و مثال‌های کاربردی",
+      "iconPath": "assets/icons/html.png",
+      "price": 39.99,
+      "freeLessons": 3,
+      "lessons": [
+        {
+          "id": "html-introduction",
+          "title": "مقدمه‌ای بر HTML",
+          "content": "HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages. HTML describes the structure of a web page using markup tags.",
+          "translatedContent": "HTML مخفف HyperText Markup Language است و زبان استاندارد برای ایجاد صفحات وب محسوب می‌شود. HTML ساختار صفحه وب را با استفاده از تگ‌های نشانه‌گذاری توصیف می‌کند. این زبان پایه و اساس تمام وب‌سایت‌ها است.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n    <title>صفحه اول من</title>\n</head>\n<body>\n    <h1>سلام دنیا!</h1>\n</body>\n</html>"
+          ],
+          "isFree": true,
+          "order": 1,
+          "courseId": "html-complete",
+          "images": []
+        },
+        {
+          "id": "html-basic-structure",
+          "title": "ساختار اساسی HTML",
+          "content": "Every HTML document must start with a document type declaration: <!DOCTYPE html>. The HTML document begins with <html> and ends with </html>. The visible part is between <body> and </body>.",
+          "translatedContent": "هر سند HTML باید با اعلان نوع سند شروع شود: <!DOCTYPE html>. سند HTML با <html> شروع و با </html> پایان می‌یابد. بخش قابل مشاهده بین <body> و </body> قرار دارد. این ساختار استاندارد برای همه صفحات وب الزامی است.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n    <title>عنوان صفحه</title>\n</head>\n<body>\n    <h1>سرتیتر اصلی</h1>\n    <p>این یک پاراگراف است.</p>\n</body>\n</html>"
+          ],
+          "isFree": true,
+          "order": 2,
+          "courseId": "html-complete",
+          "images": []
+        },
+        {
+          "id": "html-elements",
+          "title": "عناصر HTML",
+          "content": "HTML elements are defined by tags. Most elements have opening and closing tags. Elements can be nested inside other elements. Some elements are empty and don't have closing tags.",
+          "translatedContent": "عناصر HTML با تگ‌ها تعریف می‌شوند. اکثر عناصر دارای تگ باز و بسته هستند. عناصر می‌توانند درون عناصر دیگر قرار گیرند (تودرتو). برخی عناصر خالی هستند و تگ بسته ندارند مانند <br> و <img>.",
+          "examples": [
+            "<h1>سرتیتر بزرگ</h1>\n<h2>سرتیتر متوسط</h2>\n<p>این یک <strong>پاراگراف</strong> است.</p>\n<br>\n<img src=\"عکس.jpg\" alt=\"توضیح عکس\">"
+          ],
+          "isFree": true,
+          "order": 3,
+          "courseId": "html-complete",
+          "images": []
+        },
+        {
+          "id": "html-attributes",
+          "title": "ویژگی‌های HTML",
+          "content": "HTML attributes provide additional information about elements. Attributes are specified in the opening tag and come in name/value pairs. Common attributes include id, class, src, href, and alt.",
+          "translatedContent": "ویژگی‌های HTML اطلاعات اضافی درباره عناصر ارائه می‌دهند. ویژگی‌ها در تگ باز مشخص می‌شوند و به صورت جفت نام/مقدار هستند. ویژگی‌های رایج شامل id، class، src، href و alt می‌باشند.",
+          "examples": [
+            "<a href=\"https://google.com\" target=\"_blank\">گوگل</a>\n<img src=\"عکس.jpg\" alt=\"توضیح\" width=\"300\">\n<p class=\"متن-مهم\" id=\"پاراگراف-اول\">متن مهم</p>"
+          ],
+          "isFree": false,
+          "order": 4,
+          "courseId": "html-complete",
+          "images": []
+        },
+        {
+          "id": "html-headings",
+          "title": "سرتیترهای HTML",
+          "content": "HTML headings are defined with <h1> to <h6> tags. <h1> is the most important heading and <h6> is the least important. Headings are important for SEO and document structure.",
+          "translatedContent": "سرتیترهای HTML با تگ‌های <h1> تا <h6> تعریف می‌شوند. <h1> مهم‌ترین سرتیتر و <h6> کم‌اهمیت‌ترین است. سرتیترها برای سئو و ساختار سند بسیار مهم هستند و باید به ترتیب سلسله‌مراتبی استفاده شوند.",
+          "examples": [
+            "<h1>عنوان اصلی مقاله</h1>\n<h2>بخش اول</h2>\n<h3>زیربخش الف</h3>\n<h3>زیربخش ب</h3>\n<h2>بخش دوم</h2>"
+          ],
+          "isFree": false,
+          "order": 5,
+          "courseId": "html-complete",
+          "images": []
+        },
+        {
+          "id": "html-paragraphs",
+          "title": "پاراگراف‌های HTML",
+          "content": "HTML paragraphs are defined with <p> tags. Browsers automatically add space before and after paragraphs. Use <br> for line breaks and <hr> for horizontal rules.",
+          "translatedContent": "پاراگراف‌های HTML با تگ <p> تعریف می‌شوند. مرورگرها خودکار فاصله قبل و بعد از پاراگراف‌ها اضافه می‌کنند. برای شکست خط از <br> و برای خط افقی از <hr> استفاده کنید.",
+          "examples": [
+            "<p>این پاراگراف اول است.</p>\n<p>این پاراگراف دوم است.<br>با یک خط جدید.</p>\n<hr>\n<p>پاراگراف بعد از خط جداکننده.</p>"
+          ],
+          "isFree": false,
+          "order": 6,
+          "courseId": "html-complete",
+          "images": []
+        },
+        {
+          "id": "html-links",
+          "title": "لینک‌های HTML",
+          "content": "HTML links are created with <a> tags. The href attribute specifies the destination. Links can point to other pages, websites, email addresses, or sections within the same page.",
+          "translatedContent": "لینک‌های HTML با تگ <a> ایجاد می‌شوند. ویژگی href مقصد را مشخص می‌کند. لینک‌ها می‌توانند به صفحات دیگر، وب‌سایت‌ها، آدرس‌های ایمیل یا بخش‌هایی از همان صفحه اشاره کنند.",
+          "examples": [
+            "<a href=\"https://google.com\">گوگل</a>\n<a href=\"mailto:info@example.com\">ایمیل بفرستید</a>\n<a href=\"#بالا\">برو به بالای صفحه</a>\n<a href=\"صفحه2.html\" target=\"_blank\">صفحه جدید</a>"
+          ],
+          "isFree": false,
+          "order": 7,
+          "courseId": "html-complete",
+          "images": []
+        },
+        {
+          "id": "html-images",
+          "title": "تصاویر HTML",
+          "content": "HTML images are embedded with <img> tags. The src attribute specifies the image source and alt provides alternative text. Width and height can be controlled with attributes or CSS.",
+          "translatedContent": "تصاویر HTML با تگ <img> جاسازی می‌شوند. ویژگی src منبع تصویر و alt متن جایگزین را مشخص می‌کند. عرض و ارتفاع با ویژگی‌ها یا CSS کنترل می‌شود. همیشه alt تعریف کنید تا سایت در دسترس باشد.",
+          "examples": [
+            "<img src=\"منظره.jpg\" alt=\"منظره زیبای طبیعت\" width=\"400\">\n<img src=\"لوگو.png\" alt=\"لوگو شرکت\" style=\"float: right;\">\n<img src=\"آیکون.svg\" alt=\"آیکون\" width=\"32\" height=\"32\">"
+          ],
+          "isFree": false,
+          "order": 8,
+          "courseId": "html-complete",
+          "images": []
+        },
+        {
+          "id": "html-lists",
+          "title": "لیست‌های HTML",
+          "content": "HTML supports ordered lists <ol>, unordered lists <ul>, and description lists <dl>. List items are created with <li> tags. Lists can be nested and styled with CSS.",
+          "translatedContent": "HTML از لیست‌های مرتب <ol>، نامرتب <ul> و توصیفی <dl> پشتیبانی می‌کند. آیتم‌های لیست با تگ <li> ایجاد می‌شوند. لیست‌ها می‌توانند تودرتو باشند و با CSS استایل‌دهی شوند.",
+          "examples": [
+            "<ul>\n  <li>آیتم اول</li>\n  <li>آیتم دوم</li>\n</ul>\n\n<ol>\n  <li>مرحله اول</li>\n  <li>مرحله دوم</li>\n</ol>"
+          ],
+          "isFree": false,
+          "order": 9,
+          "courseId": "html-complete",
+          "images": []
+        },
+        {
+          "id": "html-tables",
+          "title": "جدول‌های HTML",
+          "content": "HTML tables are created with <table>, <tr> for rows, <td> for data cells, and <th> for header cells. Tables should be used for tabular data, not layout.",
+          "translatedContent": "جدول‌های HTML با <table> ایجاد می‌شوند. <tr> برای سطرها، <td> برای سلول‌های داده و <th> برای سلول‌های سرتیتر استفاده می‌شود. جدول‌ها باید برای داده‌های جدولی استفاده شوند، نه چیدمان صفحه.",
+          "examples": [
+            "<table>\n  <tr>\n    <th>نام</th>\n    <th>سن</th>\n  </tr>\n  <tr>\n    <td>علی</td>\n    <td>25</td>\n  </tr>\n  <tr>\n    <td>فاطمه</td>\n    <td>23</td>\n  </tr>\n</table>"
+          ],
+          "isFree": false,
+          "order": 10,
+          "courseId": "html-complete",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

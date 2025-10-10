@@ -1,4 +1,4 @@
-name: Build Flutter APK
+name: Build EduBox APK
 
 on:
   push:
@@ -10,33 +10,37 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v4
     
-    - name: Setup Java JDK
+    - name: Setup Java
       uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
         java-version: '17'
     
-    - name: Setup Flutter SDK
+    - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.16.9'
+        flutter-version: '3.19.6'
         channel: 'stable'
         cache: true
     
-    - name: Install dependencies
-      run: |
-        flutter doctor -v
-        flutter pub get
+    - name: Flutter doctor
+      run: flutter doctor -v
+    
+    - name: Get Flutter dependencies
+      run: flutter pub get
+    
+    - name: Clean build
+      run: flutter clean
     
     - name: Build APK
-      run: flutter build apk --release
+      run: flutter build apk --release --verbose
       
-    - name: Upload APK artifact
+    - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: edubox-release-apk
+        name: edubox-app-release
         path: build/app/outputs/flutter-apk/app-release.apk
-        retention-days: 30
+        retention-days: 7

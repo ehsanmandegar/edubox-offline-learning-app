@@ -1,0 +1,117 @@
+{
+  "courses": [
+    {
+      "id": "basic-cooking",
+      "categoryId": "cooking",
+      "title": "آشپزی پایه",
+      "description": "یادگیری تکنیک‌های اساسی آشپزی و آماده‌سازی غذا",
+      "iconPath": "assets/icons/basic-cooking.png",
+      "price": 24.99,
+      "freeLessons": 3,
+      "lessons": [
+        {
+          "id": "kitchen-basics",
+          "courseId": "basic-cooking",
+          "title": "اصول آشپزخانه",
+          "content": "Understanding your kitchen is the first step to becoming a good cook. Learn about essential kitchen tools, proper knife handling, and basic food safety principles. A well-organized kitchen makes cooking more enjoyable and efficient.",
+          "translatedContent": "درک آشپزخانه‌تان اولین قدم برای تبدیل شدن به آشپز خوب است. درباره ابزارهای ضروری آشپزخانه، نحوه صحیح استفاده از چاقو و اصول اولیه ایمنی غذا یاد بگیرید. آشپزخانه منظم، آشپزی را لذت‌بخش‌تر و کارآمدتر می‌کند.",
+          "images": ["assets/images/kitchen-tools.png"],
+          "examples": [
+            "Essential tools: Chef's knife, cutting board, measuring cups, mixing bowls, wooden spoons, can opener, vegetable peeler"
+          ],
+          "isFree": true,
+          "order": 1
+        },
+        {
+          "id": "knife-skills",
+          "courseId": "basic-cooking",
+          "title": "مهارت‌های چاقو",
+          "content": "Proper knife skills are fundamental to cooking. Learn how to hold a knife correctly, basic cutting techniques like chopping, dicing, and slicing. Good knife skills make cooking faster, safer, and more enjoyable.",
+          "translatedContent": "مهارت‌های صحیح چاقو اساس آشپزی است. یاد بگیرید چگونه چاقو را درست نگه دارید، تکنیک‌های اساسی برش مانند خرد کردن، مکعبی کردن و ورقه‌ای کردن. مهارت‌های خوب چاقو آشپزی را سریع‌تر، ایمن‌تر و لذت‌بخش‌تر می‌کند.",
+          "images": ["assets/images/knife-techniques.png"],
+          "examples": [
+            "Basic cuts: Julienne (matchstick), Brunoise (small dice), Chiffonade (ribbon cuts for herbs), Rough chop"
+          ],
+          "isFree": true,
+          "order": 2
+        },
+        {
+          "id": "cooking-methods",
+          "courseId": "basic-cooking",
+          "title": "روش‌های پخت",
+          "content": "There are many ways to cook food, each producing different flavors and textures. Learn about dry heat methods (roasting, grilling, sautéing) and moist heat methods (boiling, steaming, braising). Understanding these methods helps you choose the right technique for each ingredient.",
+          "translatedContent": "روش‌های زیادی برای پخت غذا وجود دارد که هر کدام طعم و بافت متفاوتی تولید می‌کنند. درباره روش‌های حرارت خشک (کباب کردن، گریل، تفت دادن) و روش‌های حرارت مرطوب (جوشاندن، بخارپز، آب‌پز) یاد بگیرید. درک این روش‌ها به شما کمک می‌کند تکنیک مناسب برای هر ماده غذایی را انتخاب کنید.",
+          "images": ["assets/images/cooking-methods.png"],
+          "examples": [
+            "Sautéing: Quick cooking in a small amount of fat over high heat\nBraising: Slow cooking in liquid after browning\nSteaming: Cooking with steam from boiling water"
+          ],
+          "isFree": true,
+          "order": 3
+        },
+        {
+          "id": "seasoning-basics",
+          "courseId": "basic-cooking",
+          "title": "اصول چاشنی‌زنی",
+          "content": "Seasoning is what transforms simple ingredients into delicious meals. Learn about salt, pepper, herbs, and spices. Understand when and how to season food for the best flavor. Taste as you cook and adjust seasonings accordingly.",
+          "translatedContent": "چاشنی‌زنی چیزی است که مواد ساده را به غذاهای خوشمزه تبدیل می‌کند. درباره نمک، فلفل، سبزیجات معطر و ادویه‌ها یاد بگیرید. بفهمید چه زمانی و چگونه غذا را برای بهترین طعم چاشنی بزنید. در حین پخت طعم بچشید و چاشنی‌ها را متناسب تنظیم کنید.",
+          "images": ["assets/images/herbs-spices.png"],
+          "examples": [
+            "Basic herb combinations: Italian (basil, oregano, thyme), French (tarragon, chervil, parsley), Mediterranean (rosemary, sage, oregano)"
+          ],
+          "isFree": false,
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "persian-cuisine",
+      "categoryId": "cooking",
+      "title": "آشپزی ایرانی",
+      "description": "یادگیری پخت غذاهای سنتی ایرانی",
+      "iconPath": "assets/icons/persian-food.png",
+      "price": 34.99,
+      "freeLessons": 3,
+      "lessons": [
+        {
+          "id": "rice-cooking",
+          "courseId": "persian-cuisine",
+          "title": "پخت برنج ایرانی",
+          "content": "Persian rice (polo) is the foundation of Iranian cuisine. Learn the traditional method of cooking fluffy, separate grains with a golden crispy bottom (tahdig). This technique requires patience and practice but results in perfect rice every time.",
+          "translatedContent": "برنج ایرانی (پلو) پایه غذاهای ایرانی است. روش سنتی پخت دانه‌های پفکی و جدا با ته‌دیگ طلایی و ترد را یاد بگیرید. این تکنیک نیاز به صبر و تمرین دارد اما هر بار برنج کاملی به دست می‌دهد.",
+          "images": ["assets/images/persian-rice.png"],
+          "examples": [
+            "Steps: 1. Soak rice 2. Parboil with salt 3. Drain and rinse 4. Layer in pot with oil 5. Steam on low heat 6. Create tahdig"
+          ],
+          "isFree": true,
+          "order": 1
+        },
+        {
+          "id": "ghormeh-sabzi",
+          "courseId": "persian-cuisine",
+          "title": "قورمه سبزی",
+          "content": "Ghormeh Sabzi is Iran's national dish, a fragrant herb stew with kidney beans and tender meat. Learn to prepare the herb mixture, proper browning techniques, and the slow cooking process that develops deep, complex flavors.",
+          "translatedContent": "قورمه سبزی غذای ملی ایران است، خورشت معطر سبزیجات با لوبیا قرمز و گوشت نرم. تهیه مخلوط سبزیجات، تکنیک‌های صحیح تفت دادن و فرآیند پخت آهسته که طعم‌های عمیق و پیچیده ایجاد می‌کند را یاد بگیرید.",
+          "images": ["assets/images/ghormeh-sabzi.png"],
+          "examples": [
+            "Herbs needed: Parsley, cilantro, chives, fenugreek leaves (shanbalileh), spinach"
+          ],
+          "isFree": true,
+          "order": 2
+        },
+        {
+          "id": "kebab-koobideh",
+          "courseId": "persian-cuisine",
+          "title": "کباب کوبیده",
+          "content": "Kebab Koobideh is a popular Persian grilled meat dish made from ground lamb or beef mixed with onions and spices. Learn the proper meat-to-fat ratio, seasoning, and grilling techniques for juicy, flavorful kebabs.",
+          "translatedContent": "کباب کوبیده یک غذای محبوب ایرانی کبابی است که از گوشت چرخ کرده گوسفند یا گاو مخلوط با پیاز و ادویه‌ها تهیه می‌شود. نسبت صحیح گوشت به چربی، چاشنی‌زنی و تکنیک‌های کباب کردن برای کباب‌های آبدار و خوشمزه را یاد بگیرید.",
+          "images": ["assets/images/kebab-koobideh.png"],
+          "examples": [
+            "Ingredients: Ground lamb/beef, grated onion, salt, pepper, turmeric, sumac (optional)"
+          ],
+          "isFree": true,
+          "order": 3
+        }
+      ]
+    }
+  ]
+}

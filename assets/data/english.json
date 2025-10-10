@@ -1,0 +1,67 @@
+{
+  "courses": [
+    {
+      "id": "english-basics",
+      "categoryId": "english",
+      "title": "مبانی زبان انگلیسی",
+      "description": "یادگیری اصول اولیه زبان انگلیسی و مکالمه روزمره",
+      "iconPath": "assets/icons/english-flag.png",
+      "price": 29.99,
+      "freeLessons": 3,
+      "lessons": [
+        {
+          "id": "alphabet-pronunciation",
+          "courseId": "english-basics",
+          "title": "الفبا و تلفظ",
+          "content": "The English alphabet has 26 letters. Learning proper pronunciation is essential for clear communication. Each letter can have different sounds depending on its position in a word. Practice the phonetic sounds and common letter combinations.",
+          "translatedContent": "الفبای انگلیسی ۲۶ حرف دارد. یادگیری تلفظ صحیح برای ارتباط واضح ضروری است. هر حرف بسته به موقعیتش در کلمه می‌تواند صداهای مختلفی داشته باشد. صداهای آوایی و ترکیبات رایج حروف را تمرین کنید.",
+          "images": ["assets/images/english-alphabet.png"],
+          "examples": [
+            "Vowels: A, E, I, O, U (and sometimes Y)\nConsonants: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z\nCommon combinations: TH, CH, SH, PH"
+          ],
+          "isFree": true,
+          "order": 1
+        },
+        {
+          "id": "basic-greetings",
+          "courseId": "english-basics",
+          "title": "احوال‌پرسی‌های اساسی",
+          "content": "Greetings are the first step in any conversation. Learn formal and informal ways to say hello, goodbye, and ask how someone is doing. Understanding when to use each type of greeting is important for social situations.",
+          "translatedContent": "احوال‌پرسی اولین قدم در هر مکالمه است. روش‌های رسمی و غیررسمی گفتن سلام، خداحافظی و پرسیدن احوال کسی را یاد بگیرید. درک اینکه چه زمانی از هر نوع احوال‌پرسی استفاده کنید برای موقعیت‌های اجتماعی مهم است.",
+          "images": ["assets/images/greetings.png"],
+          "examples": [
+            "Formal: Good morning, Good afternoon, Good evening, How do you do?\nInformal: Hi, Hey, What's up?, How's it going?\nResponses: Fine, thank you. / Not bad. / Pretty good."
+          ],
+          "isFree": true,
+          "order": 2
+        },
+        {
+          "id": "numbers-time",
+          "courseId": "english-basics",
+          "title": "اعداد و زمان",
+          "content": "Numbers and time expressions are essential for daily communication. Learn cardinal numbers (1, 2, 3), ordinal numbers (1st, 2nd, 3rd), and how to tell time. Practice asking for and giving the time in different formats.",
+          "translatedContent": "اعداد و عبارات زمانی برای ارتباط روزانه ضروری هستند. اعداد اصلی (۱، ۲، ۳)، اعداد ترتیبی (اول، دوم، سوم) و نحوه گفتن زمان را یاد بگیرید. پرسیدن و دادن زمان در فرمت‌های مختلف را تمرین کنید.",
+          "images": ["assets/images/clock-numbers.png"],
+          "examples": [
+            "Numbers 1-20: One, two, three... twenty\nTime: It's three o'clock. / It's half past two. / It's quarter to five.\nAsking time: What time is it? / Do you have the time?"
+          ],
+          "isFree": true,
+          "order": 3
+        },
+        {
+          "id": "present-tense",
+          "courseId": "english-basics",
+          "title": "زمان حال ساده",
+          "content": "The present simple tense is used for habits, facts, and general truths. Learn how to form positive, negative, and question forms. Understand when to add 's' to verbs and practice with common daily activities.",
+          "translatedContent": "زمان حال ساده برای عادات، حقایق و اصول کلی استفاده می‌شود. نحوه تشکیل فرم‌های مثبت، منفی و سوالی را یاد بگیرید. بفهمید چه زمانی به فعل‌ها 's' اضافه کنید و با فعالیت‌های رایج روزانه تمرین کنید.",
+          "images": ["assets/images/present-tense.png"],
+          "examples": [
+            "Positive: I work. / She works.\nNegative: I don't work. / She doesn't work.\nQuestion: Do you work? / Does she work?\nDaily activities: eat, sleep, work, study, play"
+          ],
+          "isFree": false,
+          "order": 4
+        }
+      ]
+    }
+  ]
+}

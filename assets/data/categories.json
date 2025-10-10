@@ -1,0 +1,46 @@
+{
+  "categories": [
+    {
+      "id": "programming",
+      "name": "برنامه‌نویسی",
+      "iconPath": "assets/icons/programming.png",
+      "description": "یادگیری زبان‌های برنامه‌نویسی و مفاهیم کامپیوتر",
+      "courseCount": 3
+    },
+    {
+      "id": "cooking",
+      "name": "آشپزی",
+      "iconPath": "assets/icons/cooking.png",
+      "description": "آموزش آشپزی و دستور پخت غذاهای مختلف",
+      "courseCount": 2
+    },
+    {
+      "id": "photography",
+      "name": "عکاسی",
+      "iconPath": "assets/icons/photography.png",
+      "description": "تکنیک‌های عکاسی و استفاده از دوربین",
+      "courseCount": 2
+    },
+    {
+      "id": "guitar",
+      "name": "گیتار",
+      "iconPath": "assets/icons/guitar.png",
+      "description": "آموزش نواختن گیتار از مبتدی تا پیشرفته",
+      "courseCount": 2
+    },
+    {
+      "id": "english",
+      "name": "زبان انگلیسی",
+      "iconPath": "assets/icons/english.png",
+      "description": "یادگیری زبان انگلیسی و تقویت مهارت‌های زبانی",
+      "courseCount": 2
+    },
+    {
+      "id": "general",
+      "name": "مهارت‌های عمومی",
+      "iconPath": "assets/icons/general.png",
+      "description": "مهارت‌های زندگی و توانایی‌های روزمره",
+      "courseCount": 2
+    }
+  ]
+}

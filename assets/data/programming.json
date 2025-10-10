@@ -1,0 +1,143 @@
+{
+  "courses": [
+    {
+      "id": "web-development-basics",
+      "categoryId": "programming",
+      "title": "مبانی توسعه وب",
+      "description": "یادگیری HTML، CSS و JavaScript از پایه",
+      "iconPath": "assets/icons/web-dev.png",
+      "price": 29.99,
+      "freeLessons": 3,
+      "lessons": [
+        {
+          "id": "html-intro",
+          "courseId": "web-development-basics",
+          "title": "مقدمه‌ای بر HTML",
+          "content": "HTML (HyperText Markup Language) is the standard markup language for creating web pages. It describes the structure of a web page using markup tags. HTML elements are the building blocks of HTML pages.",
+          "translatedContent": "HTML (زبان نشانه‌گذاری ابرمتن) زبان نشانه‌گذاری استاندارد برای ایجاد صفحات وب است. این زبان ساختار صفحه وب را با استفاده از تگ‌های نشانه‌گذاری توصیف می‌کند. عناصر HTML بلوک‌های سازنده صفحات HTML هستند.",
+          "images": ["assets/images/html-structure.png"],
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n    <title>My First Page</title>\n</head>\n<body>\n    <h1>Hello World!</h1>\n</body>\n</html>"
+          ],
+          "isFree": true,
+          "order": 1
+        },
+        {
+          "id": "html-elements",
+          "courseId": "web-development-basics",
+          "title": "عناصر HTML",
+          "content": "HTML elements are defined by tags. Most HTML elements have an opening tag and a closing tag. The content goes between the opening and closing tags. Common elements include headings (h1-h6), paragraphs (p), links (a), and images (img).",
+          "translatedContent": "عناصر HTML با تگ‌ها تعریف می‌شوند. اکثر عناصر HTML دارای تگ باز و تگ بسته هستند. محتوا بین تگ باز و بسته قرار می‌گیرد. عناصر رایج شامل سرتیترها (h1-h6)، پاراگراف‌ها (p)، لینک‌ها (a) و تصاویر (img) هستند.",
+          "images": ["assets/images/html-elements.png"],
+          "examples": [
+            "<h1>This is a heading</h1>\n<p>This is a paragraph.</p>\n<a href=\"https://example.com\">This is a link</a>\n<img src=\"image.jpg\" alt=\"Description\">"
+          ],
+          "isFree": true,
+          "order": 2
+        },
+        {
+          "id": "html-attributes",
+          "courseId": "web-development-basics",
+          "title": "ویژگی‌های HTML",
+          "content": "HTML attributes provide additional information about HTML elements. Attributes are always specified in the start tag and come in name/value pairs. Common attributes include id, class, src, href, and alt.",
+          "translatedContent": "ویژگی‌های HTML اطلاعات اضافی درباره عناصر HTML ارائه می‌دهند. ویژگی‌ها همیشه در تگ شروع مشخص می‌شوند و به صورت جفت نام/مقدار می‌آیند. ویژگی‌های رایج شامل id، class، src، href و alt هستند.",
+          "images": ["assets/images/html-attributes.png"],
+          "examples": [
+            "<div id=\"myDiv\" class=\"container\">\n    <img src=\"photo.jpg\" alt=\"A beautiful sunset\">\n    <a href=\"https://google.com\" target=\"_blank\">Visit Google</a>\n</div>"
+          ],
+          "isFree": true,
+          "order": 3
+        },
+        {
+          "id": "css-intro",
+          "courseId": "web-development-basics",
+          "title": "مقدمه‌ای بر CSS",
+          "content": "CSS (Cascading Style Sheets) is used to style and layout web pages. CSS describes how HTML elements should be displayed on screen, in print, or in other media. CSS can control the layout of multiple web pages all at once.",
+          "translatedContent": "CSS (صفحات سبک آبشاری) برای استایل‌دهی و چیدمان صفحات وب استفاده می‌شود. CSS توصیف می‌کند که عناصر HTML چگونه روی صفحه، در چاپ یا در رسانه‌های دیگر نمایش داده شوند. CSS می‌تواند چیدمان چندین صفحه وب را همزمان کنترل کند.",
+          "images": ["assets/images/css-intro.png"],
+          "examples": [
+            "body {\n    font-family: Arial, sans-serif;\n    margin: 0;\n    padding: 20px;\n}\n\nh1 {\n    color: blue;\n    text-align: center;\n}"
+          ],
+          "isFree": false,
+          "order": 4
+        },
+        {
+          "id": "css-selectors",
+          "courseId": "web-development-basics",
+          "title": "انتخابگرهای CSS",
+          "content": "CSS selectors are used to select HTML elements based on their element name, id, class, attribute, and more. The most common selectors are element selectors, class selectors (.), and id selectors (#).",
+          "translatedContent": "انتخابگرهای CSS برای انتخاب عناصر HTML بر اساس نام عنصر، شناسه، کلاس، ویژگی و موارد دیگر استفاده می‌شوند. رایج‌ترین انتخابگرها عبارتند از انتخابگرهای عنصر، انتخابگرهای کلاس (.) و انتخابگرهای شناسه (#).",
+          "images": ["assets/images/css-selectors.png"],
+          "examples": [
+            "/* Element selector */\np {\n    color: red;\n}\n\n/* Class selector */\n.highlight {\n    background-color: yellow;\n}\n\n/* ID selector */\n#header {\n    font-size: 24px;\n}"
+          ],
+          "isFree": false,
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "python-basics",
+      "categoryId": "programming",
+      "title": "مبانی پایتون",
+      "description": "یادگیری زبان برنامه‌نویسی پایتون از صفر",
+      "iconPath": "assets/icons/python.png",
+      "price": 39.99,
+      "freeLessons": 3,
+      "lessons": [
+        {
+          "id": "python-intro",
+          "courseId": "python-basics",
+          "title": "مقدمه‌ای بر پایتون",
+          "content": "Python is a high-level, interpreted programming language known for its simplicity and readability. It's widely used in web development, data science, artificial intelligence, and automation.",
+          "translatedContent": "پایتون یک زبان برنامه‌نویسی سطح بالا و تفسیری است که به دلیل سادگی و خوانایی‌اش شناخته می‌شود. این زبان به طور گسترده در توسعه وب، علم داده، هوش مصنوعی و اتوماسیون استفاده می‌شود.",
+          "images": ["assets/images/python-logo.png"],
+          "examples": [
+            "print(\"Hello, World!\")\nprint(\"Welcome to Python programming!\")"
+          ],
+          "isFree": true,
+          "order": 1
+        },
+        {
+          "id": "python-variables",
+          "courseId": "python-basics",
+          "title": "متغیرها در پایتون",
+          "content": "Variables in Python are used to store data values. Python has no command for declaring a variable. A variable is created the moment you first assign a value to it. Variables can store different types of data.",
+          "translatedContent": "متغیرها در پایتون برای ذخیره مقادیر داده استفاده می‌شوند. پایتون دستوری برای اعلان متغیر ندارد. متغیر در لحظه‌ای که اولین بار مقداری به آن اختصاص می‌دهید، ایجاد می‌شود. متغیرها می‌توانند انواع مختلف داده را ذخیره کنند.",
+          "images": ["assets/images/python-variables.png"],
+          "examples": [
+            "name = \"John\"\nage = 25\nheight = 5.9\nis_student = True\n\nprint(name)\nprint(age)\nprint(height)\nprint(is_student)"
+          ],
+          "isFree": true,
+          "order": 2
+        },
+        {
+          "id": "python-data-types",
+          "courseId": "python-basics",
+          "title": "انواع داده در پایتون",
+          "content": "Python has several built-in data types including integers (int), floating-point numbers (float), strings (str), booleans (bool), lists, tuples, and dictionaries. Each type has specific characteristics and uses.",
+          "translatedContent": "پایتون چندین نوع داده داخلی دارد از جمله اعداد صحیح (int)، اعداد اعشاری (float)، رشته‌ها (str)، بولین (bool)، لیست‌ها، تاپل‌ها و دیکشنری‌ها. هر نوع ویژگی‌ها و کاربردهای خاصی دارد.",
+          "images": ["assets/images/python-data-types.png"],
+          "examples": [
+            "# Different data types\ninteger_num = 42\nfloat_num = 3.14\ntext = \"Hello Python\"\nis_true = True\nmy_list = [1, 2, 3, 4]\nmy_dict = {\"name\": \"Alice\", \"age\": 30}"
+          ],
+          "isFree": true,
+          "order": 3
+        },
+        {
+          "id": "python-operators",
+          "courseId": "python-basics",
+          "title": "عملگرها در پایتون",
+          "content": "Python operators are special symbols that perform operations on variables and values. There are arithmetic operators (+, -, *, /), comparison operators (==, !=, <, >), logical operators (and, or, not), and assignment operators (=, +=, -=).",
+          "translatedContent": "عملگرهای پایتون نمادهای خاصی هستند که عملیات روی متغیرها و مقادیر انجام می‌دهند. عملگرهای حسابی (+، -، *، /)، عملگرهای مقایسه (==، !=، <، >)، عملگرهای منطقی (and، or، not) و عملگرهای انتساب (=، +=، -=) وجود دارند.",
+          "images": ["assets/images/python-operators.png"],
+          "examples": [
+            "# Arithmetic operators\na = 10\nb = 3\nprint(a + b)  # Addition\nprint(a - b)  # Subtraction\nprint(a * b)  # Multiplication\nprint(a / b)  # Division\n\n# Comparison operators\nprint(a > b)  # True\nprint(a == b) # False"
+          ],
+          "isFree": false,
+          "order": 4
+        }
+      ]
+    }
+  ]
+}

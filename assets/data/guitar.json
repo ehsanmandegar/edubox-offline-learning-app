@@ -1,0 +1,67 @@
+{
+  "courses": [
+    {
+      "id": "guitar-beginner",
+      "categoryId": "guitar",
+      "title": "گیتار برای مبتدیان",
+      "description": "شروع یادگیری گیتار از صفر تا نواختن اولین آهنگ",
+      "iconPath": "assets/icons/acoustic-guitar.png",
+      "price": 27.99,
+      "freeLessons": 3,
+      "lessons": [
+        {
+          "id": "guitar-parts",
+          "courseId": "guitar-beginner",
+          "title": "اجزای گیتار",
+          "content": "Before you start playing, it's important to know your instrument. Learn about the different parts of a guitar: body, neck, headstock, frets, strings, and tuning pegs. Understanding these components will help you communicate about guitar and maintain your instrument.",
+          "translatedContent": "قبل از شروع نواختن، مهم است که ساز خود را بشناسید. درباره قسمت‌های مختلف گیتار یاد بگیرید: بدنه، گردن، سرک، فرت‌ها، سیم‌ها و پیچ‌های کوک. درک این اجزا به شما کمک می‌کند درباره گیتار صحبت کنید و ساز خود را نگهداری کنید.",
+          "images": ["assets/images/guitar-anatomy.png"],
+          "examples": [
+            "Main parts: Headstock, Tuning pegs, Nut, Neck, Frets, Fretboard, Body, Sound hole, Bridge, Strings (E-A-D-G-B-E)"
+          ],
+          "isFree": true,
+          "order": 1
+        },
+        {
+          "id": "holding-guitar",
+          "courseId": "guitar-beginner",
+          "title": "نحوه نگه داشتن گیتار",
+          "content": "Proper posture and guitar position are crucial for comfortable playing and avoiding injury. Learn how to hold the guitar while sitting and standing, proper arm and hand positioning, and how to support the instrument without tension.",
+          "translatedContent": "وضعیت صحیح بدن و موقعیت گیتار برای نواختن راحت و جلوگیری از آسیب بسیار مهم است. یاد بگیرید چگونه گیتار را در حالت نشسته و ایستاده نگه دارید، موقعیت صحیح بازو و دست، و چگونه ساز را بدون تنش نگه دارید.",
+          "images": ["assets/images/guitar-posture.png"],
+          "examples": [
+            "Sitting position: Guitar rests on right leg, back straight, left foot slightly elevated\nStanding position: Use guitar strap, adjust height so arms are comfortable"
+          ],
+          "isFree": true,
+          "order": 2
+        },
+        {
+          "id": "first-chords",
+          "courseId": "guitar-beginner",
+          "title": "اولین آکوردها",
+          "content": "Chords are the foundation of guitar playing. Start with three basic open chords: G major, C major, and D major. These three chords can be used to play hundreds of songs. Practice switching between them slowly and cleanly.",
+          "translatedContent": "آکوردها پایه نواختن گیتار هستند. با سه آکورد اساسی باز شروع کنید: سل ماژور، دو ماژور و ره ماژور. این سه آکورد می‌توانند برای نواختن صدها آهنگ استفاده شوند. تغییر بین آنها را آهسته و تمیز تمرین کنید.",
+          "images": ["assets/images/basic-chords.png"],
+          "examples": [
+            "G Major: 3rd fret 6th string, 2nd fret 5th string, 3rd fret 1st string\nC Major: 1st fret 2nd string, 2nd fret 4th string, 3rd fret 5th string\nD Major: 2nd fret 1st string, 2nd fret 3rd string, 3rd fret 2nd string"
+          ],
+          "isFree": true,
+          "order": 3
+        },
+        {
+          "id": "strumming-patterns",
+          "courseId": "guitar-beginner",
+          "title": "الگوهای زدن",
+          "content": "Strumming gives life to your chords. Learn basic down and up strums, and simple strumming patterns. Start with a basic down-down-up-up-down-up pattern and practice keeping steady rhythm. Use a metronome to develop timing.",
+          "translatedContent": "زدن سیم‌ها به آکوردهایتان جان می‌بخشد. ضربه‌های اساسی پایین و بالا و الگوهای ساده زدن را یاد بگیرید. با الگوی اساسی پایین-پایین-بالا-بالا-پایین-بالا شروع کنید و حفظ ریتم ثابت را تمرین کنید. از مترونوم برای توسعه تایمینگ استفاده کنید.",
+          "images": ["assets/images/strumming-patterns.png"],
+          "examples": [
+            "Basic pattern: D-D-U-U-D-U (Down-Down-Up-Up-Down-Up)\nCount: 1-2-3-&-4-&\nStart slow: 60 BPM, gradually increase speed"
+          ],
+          "isFree": false,
+          "order": 4
+        }
+      ]
+    }
+  ]
+}

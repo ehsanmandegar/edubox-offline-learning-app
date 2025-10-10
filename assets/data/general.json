@@ -1,0 +1,67 @@
+{
+  "courses": [
+    {
+      "id": "life-skills",
+      "categoryId": "general",
+      "title": "مهارت‌های زندگی",
+      "description": "یادگیری مهارت‌های ضروری برای زندگی روزمره",
+      "iconPath": "assets/icons/life-skills.png",
+      "price": 22.99,
+      "freeLessons": 3,
+      "lessons": [
+        {
+          "id": "time-management",
+          "courseId": "life-skills",
+          "title": "مدیریت زمان",
+          "content": "Time management is one of the most valuable life skills. Learn how to prioritize tasks, create schedules, avoid procrastination, and maintain work-life balance. Good time management reduces stress and increases productivity.",
+          "translatedContent": "مدیریت زمان یکی از ارزشمندترین مهارت‌های زندگی است. یاد بگیرید چگونه کارها را اولویت‌بندی کنید، برنامه ایجاد کنید، از تعلل اجتناب کنید و تعادل کار و زندگی را حفظ کنید. مدیریت خوب زمان استرس را کاهش می‌دهد و بهره‌وری را افزایش می‌دهد.",
+          "images": ["assets/images/time-management.png"],
+          "examples": [
+            "Techniques: Pomodoro Technique, Eisenhower Matrix, Time blocking\nTools: Calendars, to-do lists, apps\nTips: Set deadlines, eliminate distractions, take breaks"
+          ],
+          "isFree": true,
+          "order": 1
+        },
+        {
+          "id": "communication-skills",
+          "courseId": "life-skills",
+          "title": "مهارت‌های ارتباطی",
+          "content": "Effective communication is essential in all aspects of life. Learn active listening, clear speaking, body language, and how to handle difficult conversations. Good communication builds stronger relationships and resolves conflicts.",
+          "translatedContent": "ارتباط مؤثر در همه جنبه‌های زندگی ضروری است. گوش دادن فعال، صحبت کردن واضح، زبان بدن و نحوه مدیریت مکالمات دشوار را یاد بگیرید. ارتباط خوب روابط قوی‌تری می‌سازد و تعارضات را حل می‌کند.",
+          "images": ["assets/images/communication.png"],
+          "examples": [
+            "Active listening: Make eye contact, ask questions, summarize what you heard\nClear speaking: Use simple words, speak slowly, organize your thoughts\nBody language: Open posture, appropriate gestures, facial expressions"
+          ],
+          "isFree": true,
+          "order": 2
+        },
+        {
+          "id": "financial-literacy",
+          "courseId": "life-skills",
+          "title": "سواد مالی",
+          "content": "Understanding money management is crucial for financial security. Learn about budgeting, saving, investing basics, and avoiding debt. Develop healthy financial habits that will serve you throughout your life.",
+          "translatedContent": "درک مدیریت پول برای امنیت مالی بسیار مهم است. درباره بودجه‌بندی، پس‌انداز، اصول سرمایه‌گذاری و اجتناب از بدهی یاد بگیرید. عادات مالی سالمی توسعه دهید که در طول زندگی به شما خدمت کنند.",
+          "images": ["assets/images/financial-planning.png"],
+          "examples": [
+            "Budgeting: 50/30/20 rule (needs/wants/savings)\nSaving tips: Automatic transfers, emergency fund, high-yield accounts\nInvesting basics: Diversification, compound interest, risk tolerance"
+          ],
+          "isFree": true,
+          "order": 3
+        },
+        {
+          "id": "problem-solving",
+          "courseId": "life-skills",
+          "title": "حل مسئله",
+          "content": "Problem-solving is a critical thinking skill that helps you navigate life's challenges. Learn systematic approaches to identify problems, generate solutions, evaluate options, and implement decisions effectively.",
+          "translatedContent": "حل مسئله مهارت تفکر انتقادی است که به شما کمک می‌کند چالش‌های زندگی را پشت سر بگذارید. رویکردهای سیستماتیک برای شناسایی مسائل، تولید راه‌حل‌ها، ارزیابی گزینه‌ها و اجرای مؤثر تصمیمات را یاد بگیرید.",
+          "images": ["assets/images/problem-solving.png"],
+          "examples": [
+            "Steps: 1. Define the problem 2. Gather information 3. Generate alternatives 4. Evaluate options 5. Choose solution 6. Implement 7. Monitor results\nTechniques: Brainstorming, root cause analysis, pros and cons lists"
+          ],
+          "isFree": false,
+          "order": 4
+        }
+      ]
+    }
+  ]
+}

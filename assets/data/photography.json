@@ -1,0 +1,67 @@
+{
+  "courses": [
+    {
+      "id": "photography-basics",
+      "categoryId": "photography",
+      "title": "مبانی عکاسی",
+      "description": "یادگیری اصول اولیه عکاسی و استفاده از دوربین",
+      "iconPath": "assets/icons/camera-basics.png",
+      "price": 32.99,
+      "freeLessons": 3,
+      "lessons": [
+        {
+          "id": "camera-basics",
+          "courseId": "photography-basics",
+          "title": "اصول دوربین",
+          "content": "Understanding your camera is essential for taking great photos. Learn about the main components: lens, sensor, viewfinder, and controls. Whether you use a smartphone, point-and-shoot, or DSLR, these fundamentals apply to all cameras.",
+          "translatedContent": "درک دوربین‌تان برای گرفتن عکس‌های عالی ضروری است. درباره اجزای اصلی یاد بگیرید: لنز، سنسور، منظره‌یاب و کنترل‌ها. چه از گوشی هوشمند، دوربین کامپکت یا DSLR استفاده کنید، این اصول برای همه دوربین‌ها صدق می‌کند.",
+          "images": ["assets/images/camera-parts.png"],
+          "examples": [
+            "Camera types: Smartphone cameras, Point-and-shoot, Mirrorless, DSLR cameras"
+          ],
+          "isFree": true,
+          "order": 1
+        },
+        {
+          "id": "exposure-triangle",
+          "courseId": "photography-basics",
+          "title": "مثلث نوردهی",
+          "content": "The exposure triangle consists of three elements: aperture, shutter speed, and ISO. These work together to control how much light reaches your camera sensor. Understanding their relationship is key to creative photography.",
+          "translatedContent": "مثلث نوردهی از سه عنصر تشکیل شده: دیافراگم، سرعت شاتر و ISO. اینها با هم کار می‌کنند تا میزان نوری که به سنسور دوربین می‌رسد را کنترل کنند. درک رابطه آنها کلید عکاسی خلاقانه است.",
+          "images": ["assets/images/exposure-triangle.png"],
+          "examples": [
+            "Aperture: f/1.4 (wide) to f/22 (narrow)\nShutter Speed: 1/4000s (fast) to 30s (slow)\nISO: 100 (low noise) to 6400+ (high noise)"
+          ],
+          "isFree": true,
+          "order": 2
+        },
+        {
+          "id": "composition-rules",
+          "courseId": "photography-basics",
+          "title": "قوانین ترکیب‌بندی",
+          "content": "Good composition makes the difference between a snapshot and a photograph. Learn the rule of thirds, leading lines, framing, and symmetry. These guidelines help create visually appealing and balanced images.",
+          "translatedContent": "ترکیب‌بندی خوب تفاوت بین یک عکس معمولی و یک عکس هنری را می‌سازد. قانون سوم، خطوط راهنما، قاب‌بندی و تقارن را یاد بگیرید. این راهنماها به ایجاد تصاویر جذاب و متعادل کمک می‌کنند.",
+          "images": ["assets/images/rule-of-thirds.png"],
+          "examples": [
+            "Rule of thirds: Place subjects along imaginary grid lines\nLeading lines: Use roads, fences, or rivers to guide the eye\nFraming: Use natural frames like doorways or branches"
+          ],
+          "isFree": true,
+          "order": 3
+        },
+        {
+          "id": "lighting-basics",
+          "courseId": "photography-basics",
+          "title": "اصول نورپردازی",
+          "content": "Light is the most important element in photography. Learn about natural light, golden hour, blue hour, and artificial lighting. Understanding light direction, quality, and color temperature will dramatically improve your photos.",
+          "translatedContent": "نور مهم‌ترین عنصر در عکاسی است. درباره نور طبیعی، ساعت طلایی، ساعت آبی و نورپردازی مصنوعی یاد بگیرید. درک جهت نور، کیفیت و دمای رنگ به طور چشمگیری عکس‌هایتان را بهبود می‌بخشد.",
+          "images": ["assets/images/lighting-types.png"],
+          "examples": [
+            "Golden hour: 1 hour after sunrise, 1 hour before sunset\nBlue hour: 20-30 minutes after sunset\nHard light: Direct sunlight, creates sharp shadows\nSoft light: Overcast sky, even illumination"
+          ],
+          "isFree": false,
+          "order": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,9 +1,7 @@
-name: Build APK
+name: Build Flutter APK
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
     branches: [ main ]
   workflow_dispatch:
 
@@ -12,28 +10,33 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
     
-    - name: Setup Java
+    - name: Setup Java JDK
       uses: actions/setup-java@v4
       with:
-        distribution: 'zulu'
+        distribution: 'temurin'
         java-version: '17'
     
-    - name: Setup Flutter
+    - name: Setup Flutter SDK
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.19.0'
+        flutter-version: '3.16.9'
         channel: 'stable'
+        cache: true
     
-    - name: Get dependencies
-      run: flutter pub get
+    - name: Install dependencies
+      run: |
+        flutter doctor -v
+        flutter pub get
+    
+    - name: Build APK
+      run: flutter build apk --release
       
-    - name: Build APK (Skip tests for now)
-      run: flutter build apk --release --no-tree-shake-icons
-      
-    - name: Upload APK
+    - name: Upload APK artifact
       uses: actions/upload-artifact@v4
       with:
-        name: edubox-app
+        name: edubox-release-apk
         path: build/app/outputs/flutter-apk/app-release.apk
+        retention-days: 30

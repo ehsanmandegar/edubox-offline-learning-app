@@ -22,4 +22,3 @@ pluginManagement {
 }
 
 include ":app"
-include ":shared_preferences_android"

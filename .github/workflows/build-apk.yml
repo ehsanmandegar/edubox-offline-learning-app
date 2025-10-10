@@ -29,22 +29,30 @@ jobs:
     - name: Flutter doctor
       run: flutter doctor -v
     
-    - name: Clean Flutter cache
+    - name: Clean all caches and regenerate plugins
       run: |
         flutter clean
         flutter pub cache clean
         rm -rf ~/.pub-cache
-    
-    - name: Get Flutter dependencies
-      run: flutter pub get
-    
-    - name: Clean Gradle cache
-      run: |
         rm -rf ~/.gradle/caches
         rm -rf android/.gradle
         rm -rf android/app/build
+        rm -rf .dart_tool
+        rm -rf build
     
-    - name: Build APK
+    - name: Get Flutter dependencies and regenerate plugins
+      run: |
+        flutter pub get
+        flutter pub deps
+        flutter packages get
+    
+    - name: Verify plugin generation
+      run: |
+        echo "Checking generated plugin files..."
+        ls -la android/app/src/main/java/io/flutter/plugins/ || echo "Plugin directory not found"
+        ls -la .dart_tool/flutter_build/ || echo "Flutter build directory not found"
+    
+    - name: Build APK with verbose output
       run: flutter build apk --release --verbose
       
     - name: Upload APK

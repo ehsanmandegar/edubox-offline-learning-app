@@ -260,9 +260,15 @@ class iOS26Animations {
         ),
       ));
       
-      return holographicEntrance(child, 
-        AnimationController.unbounded(vsync: controller)
-          ..value = delayedAnimation.value
+      return FadeTransition(
+        opacity: delayedAnimation,
+        child: SlideTransition(
+          position: Tween<Offset>(
+            begin: const Offset(0, 0.3),
+            end: Offset.zero,
+          ).animate(delayedAnimation),
+          child: child,
+        ),
       );
     }).toList();
   }

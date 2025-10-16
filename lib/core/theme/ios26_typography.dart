@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 /// iOS 26 Advanced Typography System
 /// Neural-adaptive font system with holographic text effects
 class iOS26Typography {
+  static const String fontFamily = 'SF Pro Display';
   static const String primaryFontFamily = 'SF Pro Display';
   static const String secondaryFontFamily = 'SF Pro Text';
   

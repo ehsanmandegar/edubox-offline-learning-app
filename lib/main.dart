@@ -7,6 +7,48 @@ import 'core/models/course.dart';
 import 'core/models/lesson.dart';
 import 'core/widgets/hyper_glass_container.dart';
 
+// Simple Progress Provider
+class ProgressProvider extends ChangeNotifier {
+  final Map<String, Set<String>> _completedLessons = {};
+  final Map<String, bool> _bookmarkedLessons = {};
+
+  Set<String> getCompletedLessons(String courseId) {
+    return _completedLessons[courseId] ?? {};
+  }
+
+  bool isLessonCompleted(String courseId, String lessonId) {
+    return _completedLessons[courseId]?.contains(lessonId) ?? false;
+  }
+
+  void markLessonCompleted(String courseId, String lessonId) {
+    if (!_completedLessons.containsKey(courseId)) {
+      _completedLessons[courseId] = <String>{};
+    }
+    _completedLessons[courseId]!.add(lessonId);
+    notifyListeners();
+  }
+
+  void markLessonIncomplete(String courseId, String lessonId) {
+    _completedLessons[courseId]?.remove(lessonId);
+    notifyListeners();
+  }
+
+  double getCourseProgress(String courseId, int totalLessons) {
+    if (totalLessons == 0) return 0.0;
+    final completed = _completedLessons[courseId]?.length ?? 0;
+    return completed / totalLessons;
+  }
+
+  bool isLessonBookmarked(String lessonId) {
+    return _bookmarkedLessons[lessonId] ?? false;
+  }
+
+  void toggleBookmark(String lessonId) {
+    _bookmarkedLessons[lessonId] = !(_bookmarkedLessons[lessonId] ?? false);
+    notifyListeners();
+  }
+}
+
 void main() {
   runApp(const EduBoxApp());
 }
@@ -16,13 +58,16 @@ class EduBoxApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'EduBox - iOS 26',
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
-      themeMode: ThemeMode.system,
-      home: const CourseListScreen(),
+    return ChangeNotifierProvider(
+      create: (_) => ProgressProvider(),
+      child: MaterialApp(
+        title: 'EduBox - iOS 26',
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme.lightTheme,
+        darkTheme: AppTheme.darkTheme,
+        themeMode: ThemeMode.system,
+        home: const CourseListScreen(),
+      ),
     );
   }
 }
@@ -220,26 +265,90 @@ class _CourseListScreenState extends State<CourseListScreen>
                   ],
                 ),
                 const SizedBox(height: 16),
-                Row(
-                  children: [
-                    _buildInfoChip(
-                      '${course.totalLessons} درس',
-                      Icons.play_lesson_rounded,
-                      const Color(0xFF0066FF),
-                    ),
-                    const SizedBox(width: 12),
-                    _buildInfoChip(
-                      course.formattedDuration,
-                      Icons.access_time_rounded,
-                      const Color(0xFFFF6600),
-                    ),
-                    const SizedBox(width: 12),
-                    _buildInfoChip(
-                      course.difficultyLevel.persianName,
-                      Icons.trending_up_rounded,
-                      course.difficultyLevel.color,
-                    ),
-                  ],
+                Consumer<ProgressProvider>(
+                  builder: (context, progressProvider, child) {
+                    final progress = progressProvider.getCourseProgress(course.id, course.totalLessons);
+                    final completedLessons = progressProvider.getCompletedLessons(course.id).length;
+                    
+                    return Column(
+                      children: [
+                        Row(
+                          children: [
+                            _buildInfoChip(
+                              '${course.totalLessons} درس',
+                              Icons.play_lesson_rounded,
+                              const Color(0xFF0066FF),
+                            ),
+                            const SizedBox(width: 12),
+                            _buildInfoChip(
+                              course.formattedDuration,
+                              Icons.access_time_rounded,
+                              const Color(0xFFFF6600),
+                            ),
+                            const SizedBox(width: 12),
+                            _buildInfoChip(
+                              course.difficultyLevel.persianName,
+                              Icons.trending_up_rounded,
+                              course.difficultyLevel.color,
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 16),
+                        // Progress Section
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'پیشرفت: $completedLessons/${course.totalLessons}',
+                              style: TextStyle(
+                                fontSize: 14,
+                                color: Colors.grey.shade600,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            Text(
+                              '${(progress * 100).toInt()}%',
+                              style: const TextStyle(
+                                fontSize: 14,
+                                color: Color(0xFF0066FF),
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 8),
+                        Container(
+                          height: 6,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(3),
+                            color: Colors.grey.shade200,
+                          ),
+                          child: FractionallySizedBox(
+                            alignment: Alignment.centerLeft,
+                            widthFactor: progress,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(3),
+                                gradient: const LinearGradient(
+                                  colors: [
+                                    Color(0xFF0066FF),
+                                    Color(0xFF00FF77),
+                                  ],
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: const Color(0xFF0066FF).withOpacity(0.3),
+                                    blurRadius: 6,
+                                    offset: const Offset(0, 2),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    );
+                  },
                 ),
               ],
             ),
@@ -421,7 +530,6 @@ class _LessonDetailScreenState extends State<LessonDetailScreen>
   late Animation<double> _floatingAnimation;
   
   bool _showTranslation = false;
-  bool _isCompleted = false;
 
   @override
   void initState() {
@@ -508,46 +616,66 @@ class _LessonDetailScreenState extends State<LessonDetailScreen>
           ),
         ),
         actions: [
-          IconButton(
-            onPressed: () {
-              setState(() {
-                _isCompleted = !_isCompleted;
-              });
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(
-                    _isCompleted ? '✅ درس تکمیل شد!' : '📖 درس به عنوان ناتمام علامت‌گذاری شد',
-                  ),
-                  backgroundColor: _isCompleted 
-                      ? const Color(0xFF00FF77) 
-                      : const Color(0xFF0066FF),
-                  behavior: SnackBarBehavior.floating,
-                  shape: RoundedRectangleBorder(
+          Consumer<ProgressProvider>(
+            builder: (context, progressProvider, child) {
+              final isCompleted = progressProvider.isLessonCompleted(
+                widget.lesson.courseId, 
+                widget.lesson.id
+              );
+              
+              return IconButton(
+                onPressed: () {
+                  if (isCompleted) {
+                    progressProvider.markLessonIncomplete(
+                      widget.lesson.courseId, 
+                      widget.lesson.id
+                    );
+                  } else {
+                    progressProvider.markLessonCompleted(
+                      widget.lesson.courseId, 
+                      widget.lesson.id
+                    );
+                  }
+                  
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                        isCompleted 
+                            ? '📖 درس به عنوان ناتمام علامت‌گذاری شد'
+                            : '✅ درس تکمیل شد!',
+                      ),
+                      backgroundColor: isCompleted 
+                          ? const Color(0xFF0066FF)
+                          : const Color(0xFF00FF77),
+                      behavior: SnackBarBehavior.floating,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                  );
+                },
+                icon: Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: isCompleted 
+                        ? const Color(0xFF00FF77).withOpacity(0.2)
+                        : Colors.white.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(12),
+                    border: Border.all(
+                      color: isCompleted 
+                          ? const Color(0xFF00FF77).withOpacity(0.5)
+                          : Colors.white.withOpacity(0.3),
+                      width: 1,
+                    ),
+                  ),
+                  child: Icon(
+                    isCompleted ? Icons.check_circle : Icons.radio_button_unchecked,
+                    color: isCompleted ? const Color(0xFF00FF77) : const Color(0xFF0066FF),
+                    size: 20,
                   ),
                 ),
               );
             },
-            icon: Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: _isCompleted 
-                    ? const Color(0xFF00FF77).withOpacity(0.2)
-                    : Colors.white.withOpacity(0.2),
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(
-                  color: _isCompleted 
-                      ? const Color(0xFF00FF77).withOpacity(0.5)
-                      : Colors.white.withOpacity(0.3),
-                  width: 1,
-                ),
-              ),
-              child: Icon(
-                _isCompleted ? Icons.check_circle : Icons.radio_button_unchecked,
-                color: _isCompleted ? const Color(0xFF00FF77) : const Color(0xFF0066FF),
-                size: 20,
-              ),
-            ),
           ),
         ],
       ),

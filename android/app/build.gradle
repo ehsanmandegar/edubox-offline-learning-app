@@ -24,7 +24,7 @@ if (flutterVersionName == null) {
 
 android {
     namespace "com.edubox.app"
-    compileSdk flutter.compileSdkVersion
+    compileSdk 34  // Android 14 (latest)
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -42,8 +42,9 @@ android {
 
     defaultConfig {
         applicationId "com.edubox.app"
-        minSdkVersion flutter.minSdkVersion
-        targetSdkVersion flutter.targetSdkVersion
+        minSdkVersion 21  // Android 5.0 (minimum for modern apps)
+        targetSdkVersion 34  // Android 14 (latest)
+        compileSdk 34  // Latest compile SDK
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }

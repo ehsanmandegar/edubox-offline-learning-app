@@ -52,8 +52,8 @@ jobs:
         ls -la android/app/src/main/java/io/flutter/plugins/ || echo "Plugin directory not found"
         ls -la .dart_tool/flutter_build/ || echo "Flutter build directory not found"
     
-    - name: Build APK with verbose output
-      run: flutter build apk --release --verbose
+    - name: Build Universal APK for better compatibility
+      run: flutter build apk --release --target-platform android-arm,android-arm64,android-x64 --split-per-abi
       
     - name: Upload APK
       uses: actions/upload-artifact@v4

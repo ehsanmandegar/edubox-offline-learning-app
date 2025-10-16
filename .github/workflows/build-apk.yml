@@ -53,11 +53,13 @@ jobs:
         ls -la .dart_tool/flutter_build/ || echo "Flutter build directory not found"
     
     - name: Build Universal APK for better compatibility
-      run: flutter build apk --release --target-platform android-arm,android-arm64,android-x64 --split-per-abi
+      run: |
+        flutter build apk --release --target-platform android-arm,android-arm64,android-x64 --split-per-abi
+        ls -la build/app/outputs/flutter-apk/
       
-    - name: Upload APK
+    - name: Upload APKs
       uses: actions/upload-artifact@v4
       with:
-        name: edubox-app-release
-        path: build/app/outputs/flutter-apk/app-release.apk
+        name: edubox-app-release-apks
+        path: build/app/outputs/flutter-apk/*.apk
         retention-days: 7

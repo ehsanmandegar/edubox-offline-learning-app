@@ -43,7 +43,7 @@ android {
     defaultConfig {
         applicationId "com.edubox.app"
         minSdkVersion 21  // Android 5.0 (minimum for modern apps)
-        targetSdkVersion 34  // Android 14 (latest)
+        targetSdkVersion 33  // Android 13 (optimal compatibility)
         compileSdk 34  // Latest compile SDK
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName

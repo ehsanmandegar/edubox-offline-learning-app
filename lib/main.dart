@@ -760,7 +760,7 @@ class _LessonDetailScreenState extends State<LessonDetailScreen>
                     });
                   },
                   icon: Icon(
-                    _showTranslation ? Icons.translate_off : Icons.translate,
+                    _showTranslation ? Icons.language : Icons.translate,
                     size: 18,
                     color: const Color(0xFF0066FF),
                   ),

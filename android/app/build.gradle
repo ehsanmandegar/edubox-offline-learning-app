@@ -47,6 +47,11 @@ android {
         compileSdk 34  // Latest compile SDK
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        
+        // Support all architectures for maximum compatibility
+        ndk {
+            abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86_64', 'x86'
+        }
     }
 
     buildTypes {
@@ -54,10 +59,18 @@ android {
             // Disable minification and resource shrinking for CI builds
             minifyEnabled false
             shrinkResources false
+            signingConfig signingConfigs.debug  // Use debug signing for easier installation
         }
         debug {
             minifyEnabled false
             shrinkResources false
+        }
+    }
+    
+    // Build universal APK for maximum compatibility
+    splits {
+        abi {
+            enable false  // Disable ABI splits to create universal APK
         }
     }
 }
